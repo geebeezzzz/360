@@ -9,10 +9,10 @@
 	"ddd": 0,
 	"assets": [{
 		"id": "image_0",
-		"w": 591,
-		"h": 1280,
-		"u": "images/",
-		"p": "img_0.png",
+		"w": 393,
+		"h": 393,
+		"u": "http://tonsser-production.imgix.net/db264873-b9d5-4b4c-8a06-4ae6e6f8fa5c/profile-picture/",
+		"p": "9A4D65A4-F6C4-4B0F-BBB8-D49DD6DC505C.jpeg",
 		"e": 0
 	}],
 	"layers": [{
@@ -258,12 +258,12 @@
 			},
 			"a": {
 				"a": 0,
-				"k": [295.5, 640, 0],
+				"k": [196.5, 196.5, 0],
 				"ix": 1
 			},
 			"s": {
 				"a": 0,
-				"k": [100, 100, 100],
+				"k": [196, 196, 100],
 				"ix": 6
 			}
 		},
