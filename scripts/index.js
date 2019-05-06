@@ -4,8 +4,11 @@ var animation = bodymovin.loadAnimation({
   loop: true,
   autoplay: true,
   path: 'data.json'
+  
+  document.write(5 + 6);
+  
 })
 
 console.log(5 + 6);
-document.write(5 + 6);
+
 
