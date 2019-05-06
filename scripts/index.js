@@ -6,5 +6,6 @@ var animation = bodymovin.loadAnimation({
   path: 'data.json'
 })
 
-
+function writeTest() {
 document.write(5 + 6);
+}
