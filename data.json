@@ -1,4 +1,3 @@
-// JSON Document
 {
 	"v": "5.3.4",
 	"fr": 25,
@@ -18,9 +17,9 @@
 	}],
 	"fonts": {
 		"list": [{
-			"origin": 1,
+			"origin": 0,
 			"fPath": "",
-			"fClass": "Rating",
+			"fClass": "",
 			"fFamily": "Roboto",
 			"fWeight": "",
 			"fStyle": "Bold",
