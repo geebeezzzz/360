@@ -5,3 +5,6 @@ var animation = bodymovin.loadAnimation({
   autoplay: true,
   path: 'data.json'
 })
+
+
+document.write(5 + 6);
