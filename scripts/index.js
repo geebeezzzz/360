@@ -12,3 +12,5 @@ console.log(5 + 6);
 
 document.getElementById("bm").innerHTML = 5 + 6;
 
+document.getElementById("bm").innerHTML =
+"Page location is " + window.location.href;
