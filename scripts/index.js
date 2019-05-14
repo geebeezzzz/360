@@ -17,7 +17,7 @@ var new_json = json.then(function(result) {
 	error => {
 		
 	}
-})
+}).await()
 
 console.log(json)
 	// .then(json => console.log(json))
