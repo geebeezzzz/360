@@ -12,15 +12,23 @@
 <body>
 	<a href="?slug=db264873-b9d5-4b4c-8a06-4ae6e6f8fa5c">ADD SOME META</a>
 	<div id="parsing"></div>
+	<button onclick="myFunction()">Change</button>
  	<div id="whatnow"></div>
 	<div id="rateTest"></div>
  	<div id="bm"></div>
+	
   <!-- <a href=window.location.href + '&slug=tester'>ADD SOME META</a> -->
   <!-- Scripts -->
   <script src="scripts/bodymovin.js"></script>
   <script src="scripts/index.js"></script>
 	
-
+	<script>
+		function myFunction() {
+		var str = document.getElementById("bm").innerHTML; 
+		var res = str.replace(/MyRating/g, "red");
+		 document.getElementById("bm").innerHTML = res;
+		}
+	</script>
  
 
 	

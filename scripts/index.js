@@ -20,3 +20,8 @@ console.log(window.location);
 document.getElementById("whatnow").innerHTML = "Page search is " + window.location.search.substring(1).replace("slug=","");
 
 
+
+
+
+
+
