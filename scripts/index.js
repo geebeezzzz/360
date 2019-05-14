@@ -1,4 +1,5 @@
 ///////////////////////////////////////////////////LOAD////////////////////////////////////
+
 var my_rating = fetch('data.json')
 	.then(response => response.json())
 	.then(json => json.layers[1].t.d.k[0].s.t);
@@ -8,8 +9,14 @@ var json = fetch('data.json')
 	.then(response => response.json())
 
 var new_json = json.then(function(result) {
-   result.layers[1].t.d.k[0].s.t = "huh"
-   result
+	
+		result => {
+			result.layers[1].t.d.k[0].s.t = "huh"
+		
+	},
+	error => {
+		
+	}
 })
 
 console.log(json)
