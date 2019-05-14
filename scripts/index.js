@@ -5,10 +5,12 @@ var my_rating = fetch('data.json')
 	.then(json => json.layers[1].t.d.k[0].s.t);
 	
 
+var boi
 var json = fetch('data.json')
 	.then(response => {
-	  var boi = response.json()
-	  boi.layers[1].t.d.k[0].s.t = "huh"
+	  this.boi = response.json()
+	  this.boi.layers[1].t.d.k[0].s.t = "huh"
+console.logt(his.boi.layers[1].t.d.k[0].s.t)
 	})
 
 //var new_json = json.then(function(result) {
