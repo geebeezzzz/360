@@ -20,19 +20,7 @@
   <script src="scripts/bodymovin.js"></script>
   <script src="scripts/index.js"></script>
 	
-	<script>
-     $(document).ready(function () {
-         $.ajax({
-             url: "/data.json",
-             type: "Get",
-             success: function (data) {
-                 var old = JSON.stringify(data).replace(/MyRating/g, '"#"'); //convert to JSON string
-				 var newArray = JSON.parse(old); //convert back to array
-             },
-             error: function (msg) { alert(msg); }
-         });
-     });
-	</script>
+
  
 
 	
