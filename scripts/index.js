@@ -17,6 +17,6 @@ document.getElementById("bm").innerHTML = "Page location is " + window.location.
 
 console.log(window.location);
 
+document.getElementById("whatnow").innerHTML = "Page search is " + window.location.search.substring(1).split('&');
 
-document.getElementById("whatnow").innerHTML = "Page search is " + window.location.search.substring(1);
 
