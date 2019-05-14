@@ -10,7 +10,7 @@ var json = fetch('data.json')
 	.then(response => {
 	  this.boi = response.json()
 	  this.boi.layers[1].t.d.k[0].s.t = "huh"
-console.logt(his.boi.layers[1].t.d.k[0].s.t)
+console.log(his.boi.layers[1].t.d.k[0].s.t)
 	})
 
 //var new_json = json.then(function(result) {
