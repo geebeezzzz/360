@@ -1,3 +1,25 @@
+///////////////////////////////////////////////////LOAD////////////////////////////////////
+var my_rating = fetch('data.json')
+	.then(response => response.json())
+	.then(json => json.layers[1].t.d.k[0].s.t);
+	
+
+var json = fetch('data.json')
+	.then(response => response.json())
+
+var new_json = json.then(function(result) {
+   result.layers[1].t.d.k[0].s.t = "huh"
+   result
+})
+
+console.log(json)
+	// .then(json => console.log(json))
+	//.then(json.layers[1].t.d.k[0].s.t = "huh")
+
+
+
+///////////////////////////////////////////////////LOAD ANIMATION////////////////////////////////////
+
 var animation = bodymovin.loadAnimation({
   container: document.getElementById('bm'),
   renderer: 'svg',
@@ -21,6 +43,14 @@ document.getElementById("whatnow").innerHTML = "Page search is " + window.locati
 
 
 
+
+
+
+
+
+//var mrJson = localStorage.getItem("data.json");
+//console.log(mrJson.layers);
+//animation.layers.t.d.k.s.t = "Mercedes";
 
 
 
