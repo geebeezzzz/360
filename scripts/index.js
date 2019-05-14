@@ -6,18 +6,20 @@ var my_rating = fetch('data.json')
 	
 
 var json = fetch('data.json')
-	.then(response => response.json())
+	.then(response => {
+	  var boi = response.json()
+	  boi.layers[1].t.d.k[0].s.t = "huh"
+	})
 
-var new_json = json.then(function(result) {
-	
-	result => {
-		result.layers[1].t.d.k[0].s.t = "huh"
-		
-	},
-	error => {
-		
-	}
-}).await()
+//var new_json = json.then(function(result) {
+//	result => {
+//		result.layers[1].t.d.k[0].s.t = "huh"
+//		
+//	},
+//	error => {
+//		
+//	}
+//}).await()
 
 console.log(json)
 	// .then(json => console.log(json))
@@ -32,7 +34,7 @@ var animation = bodymovin.loadAnimation({
   renderer: 'svg',
   loop: true,
   autoplay: true,
-  path: new_json
+  path: boi
 	//path: 'data.json'
   
 })
