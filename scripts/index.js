@@ -10,8 +10,8 @@ var json = fetch('data.json')
 
 var new_json = json.then(function(result) {
 	
-		result => {
-			result.layers[1].t.d.k[0].s.t = "huh"
+	result => {
+		result.layers[1].t.d.k[0].s.t = "huh"
 		
 	},
 	error => {
@@ -32,7 +32,8 @@ var animation = bodymovin.loadAnimation({
   renderer: 'svg',
   loop: true,
   autoplay: true,
-  path: 'data.json'
+  path: 'new_json'
+	//path: 'data.json'
   
 })
 
