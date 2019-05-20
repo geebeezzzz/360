@@ -64,12 +64,12 @@ fetch('data.json')
 			
 			//////////////////////////////////CHANGING////////////////////////
 			myObj = data[0]; 
-			myObj.firstName = mrSlug;
+			myObj.firstName = 'ola';
 			console.log(myObj);
 		
-		//	myOtherObj = data[1];
-		//	myOtherObj.firstName = mySlug;
-		//	console.log(myOtherObj);
+			myOtherObj = data[1];
+			myOtherObj.firstName = 'olllla';
+			console.log(myOtherObj);
 			////////////////////////////////////////////////////////////////
 			
             for (var i = 0; i < data.length; i++) {
