@@ -1,6 +1,43 @@
 // JavaScript Document
+
+
+
 const app = document.getElementById('root')
 
+
+
+
+
+// Create a request variable and assign a new XMLHttpRequest object to it.
+var request = new XMLHttpRequest()
+
+// Open a new connection, using the GET request on the URL endpoint
+request.open('GET', 'https://staging-api.tonsser.com/50/users/david-pedersen', true)
+
+request.onload = function () {
+
+	var userName = JSON.parse(this.response)
+  if (request.status >= 200 && request.status < 400) {
+/////////////////////////////////////////////////////////////////PLACE TO RUN USING API DATA/////////////////////////////////////////////	  
+	
+	  
+	  console.log(userName.response.firstname);
+/////////////////////////////////////////////////////////////////PLACE TO RUN USING API DATA/////////////////////////////////////////////	 	  
+	  
+	  
+    
+  } else {
+    const errorMessage = document.createElement('marquee')
+    errorMessage.textContent = `Gah, it's not working!`
+    app.appendChild(errorMessage)
+  }
+	
+	
+	
+  }
+
+// Send request
+request.send()
 
 
 
@@ -21,56 +58,12 @@ fetch('data.json')
             var mainContainer = document.getElementById("myData");
 			
 			//////////////////////////////////CHANGING////////////////////////
-	
-
-			// Create a request variable and assign a new XMLHttpRequest object to it.
-			var request = new XMLHttpRequest()
-
-			// Open a new connection, using the GET request on the URL endpoint
-			request.open('GET', 'https://staging-api.tonsser.com/50/users/david-pedersen', true)
-
-			request.onload = function () {
-
-				var userName = JSON.parse(this.response)
-			  if (request.status >= 200 && request.status < 400) {
-			/////////////////////////////////////////////////////////////////PLACE TO RUN USING API DATA/////////////////////////////////////////////	  
-
-
-				  console.log(userName.response.firstname);				   
-
-			/////////////////////////////////////////////////////////////////PLACE TO RUN USING API DATA/////////////////////////////////////////////	 	  
-	  
-	  
-    
-			  } else {
-				const errorMessage = document.createElement('marquee')
-				errorMessage.textContent = `Gah, it's not working!`
-				app.appendChild(errorMessage)
-			  }
-
-
-
-			  }
-
-			// Send request
-			request.send()
-			
-			
-			
+			myObj = data[0]; 
+			myObj.firstName = userName.response.firstname;
+			console.log(myObj);
 			////////////////////////////////////////////////////////////////
 			
             for (var i = 0; i < data.length; i++) {
-				
-				
-				
-				//////////////////////////////// TESTING PLACEMENT ///////////////////////////////////////
-								  
-				  			myObj = data[0]; 
-							myObj.firstName = userName.response.firstname;
-							console.log(myObj);
-				
-				///////////////////////////////////////////////////////////////////
-				
                 var div = document.createElement("div");
                 div.innerHTML = 'Name: ' + data[i].firstName + ' ' + data[i].lastName;
                 mainContainer.appendChild(div);
