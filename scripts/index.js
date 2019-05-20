@@ -36,13 +36,8 @@ fetch('data.json')
 			/////////////////////////////////////////////////////////////////PLACE TO RUN USING API DATA/////////////////////////////////////////////	  
 
 
-				  console.log(userName.response.firstname);
-				  
-				  
-				  
-				  			myObj = data[0]; 
-							myObj.firstName = userName.response.firstname;
-							console.log(myObj);
+				  console.log(userName.response.firstname);				   
+
 			/////////////////////////////////////////////////////////////////PLACE TO RUN USING API DATA/////////////////////////////////////////////	 	  
 	  
 	  
@@ -65,6 +60,17 @@ fetch('data.json')
 			////////////////////////////////////////////////////////////////
 			
             for (var i = 0; i < data.length; i++) {
+				
+				
+				
+				//////////////////////////////// TESTING PLACEMENT ///////////////////////////////////////
+								  
+				  			myObj = data[0]; 
+							myObj.firstName = userName.response.firstname;
+							console.log(myObj);
+				
+				///////////////////////////////////////////////////////////////////
+				
                 var div = document.createElement("div");
                 div.innerHTML = 'Name: ' + data[i].firstName + ' ' + data[i].lastName;
                 mainContainer.appendChild(div);
