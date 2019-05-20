@@ -64,7 +64,7 @@ fetch('data.json')
 			
 			//////////////////////////////////CHANGING////////////////////////
 			myObj = data[0]; 
-			myObj.firstName = 'ola';
+			myObj.firstName = mrSlug;
 			console.log(myObj);
 		
 		//	myOtherObj = data[1];
