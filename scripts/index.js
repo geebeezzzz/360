@@ -21,7 +21,7 @@ request.onload = function () {
 	var data = JSON.parse(this.response)
 	
 	{
-	var mrSlug = data.response.firstname
+	mrSlug = data.response.firstname;
 	}
 	
 	console.log(mrSlug);
