@@ -22,7 +22,8 @@ request.onload = function () {
 	
 	  
 	  console.log(data.response.firstname);
-	  var mrSlug = JSON.parse(this.response.firstname)
+	  mrSlug = JSON.parse(this.response.firstname);
+	  console.log(mrSlug);
 /////////////////////////////////////////////////////////////////PLACE TO RUN USING API DATA/////////////////////////////////////////////	 	  
 	  
 	  
