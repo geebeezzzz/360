@@ -16,14 +16,17 @@ request.open('GET', 'https://staging-api.tonsser.com/50/users/david-pedersen', t
 
 request.onload = function () {
 
+	var mrSlug = JSON.parse(this.response.firstname);
+	console.log(mrSlug);
+	
+	
 	var data = JSON.parse(this.response)
   if (request.status >= 200 && request.status < 400) {
 /////////////////////////////////////////////////////////////////PLACE TO RUN USING API DATA/////////////////////////////////////////////	  
 	
 	  
 	  console.log(data.response.firstname);
-	  mrSlug = JSON.parse(this.response.firstname);
-	  console.log(mrSlug);
+	  
 /////////////////////////////////////////////////////////////////PLACE TO RUN USING API DATA/////////////////////////////////////////////	 	  
 	  
 	  
