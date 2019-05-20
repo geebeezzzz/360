@@ -15,12 +15,12 @@ var request = new XMLHttpRequest()
 request.open('GET', 'https://staging-api.tonsser.com/50/users/david-pedersen', true)
 
 request.onload = function () {
-
-	var mrSlug = JSON.parse(this.response.firstname);
-	console.log(mrSlug);
-	
 	
 	var data = JSON.parse(this.response)
+	
+	var mrSlug = JSON.parse(this.response.firstname)
+	console.log(mrSlug);
+	
   if (request.status >= 200 && request.status < 400) {
 /////////////////////////////////////////////////////////////////PLACE TO RUN USING API DATA/////////////////////////////////////////////	  
 	
