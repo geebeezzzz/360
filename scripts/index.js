@@ -59,7 +59,7 @@ fetch('data.json')
 			
 			//////////////////////////////////CHANGING////////////////////////
 			myObj = data[0]; 
-			myObj.firstName = data.response.firstname;
+			myObj.firstName = 'ola';
 			console.log(myObj);
 			////////////////////////////////////////////////////////////////
 			
