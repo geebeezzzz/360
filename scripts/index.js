@@ -1,39 +1,5 @@
 // JavaScript Document
-fetch('data.json')
-            .then(function (response) {
-                return response.json();
-            })
-            .then(function (data) {
-                appendData(data);
-            })
-            .catch(function (err) {
-                console.log('error: ' + err);
-            });
 
-        function appendData(data) {
-			
-            var mainContainer = document.getElementById("myData");
-			
-			//////////////////////////////////CHANGING////////////////////////
-			myObj = data[0]; 
-			myObj.firstName = "bad";
-			console.log(myObj);
-			////////////////////////////////////////////////////////////////
-			
-            for (var i = 0; i < data.length; i++) {
-                var div = document.createElement("div");
-                div.innerHTML = 'Name: ' + data[i].firstName + ' ' + data[i].lastName;
-                mainContainer.appendChild(div);
-            }
-			
-			console.log(data[0].firstName);		
-			
-			//https://staging-api.tonsser.com/50/users/david-pedersen
-				
-//			myObj = data[0]; 
-//			myObj.firstName = "bad";
-//			console.log(myObj);		
-		}
 
 
 const app = document.getElementById('root')
@@ -68,3 +34,42 @@ request.onload = function () {
 
 // Send request
 request.send()
+
+
+
+
+fetch('data.json')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                appendData(data);
+            })
+            .catch(function (err) {
+                console.log('error: ' + err);
+            });
+
+        function appendData(data) {
+			
+            var mainContainer = document.getElementById("myData");
+			
+			//////////////////////////////////CHANGING////////////////////////
+			myObj = data[0]; 
+			myObj.firstName = userName.response.firstname;
+			console.log(myObj);
+			////////////////////////////////////////////////////////////////
+			
+            for (var i = 0; i < data.length; i++) {
+                var div = document.createElement("div");
+                div.innerHTML = 'Name: ' + data[i].firstName + ' ' + data[i].lastName;
+                mainContainer.appendChild(div);
+            }
+			
+			console.log(data[0].firstName);		
+			
+			//https://staging-api.tonsser.com/50/users/david-pedersen
+				
+//			myObj = data[0]; 
+//			myObj.firstName = "bad";
+//			console.log(myObj);		
+		}
