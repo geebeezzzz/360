@@ -1,7 +1,4 @@
 // JavaScript Document
-
-console.log("test");
-
 fetch('data.json')
             .then(function (response) {
                 return response.json();
@@ -49,10 +46,14 @@ request.open('GET', 'https://staging-api.tonsser.com/50/users/david-pedersen', t
 
 request.onload = function () {
 
-	var data = JSON.parse(this.response)
+	var userName = JSON.parse(this.response)
   if (request.status >= 200 && request.status < 400) {
+/////////////////////////////////////////////////////////////////PLACE TO RUN USING API DATA/////////////////////////////////////////////	  
+	
 	  
-	  console.log(data);
+	  console.log(userName.shield.user.firstname);
+/////////////////////////////////////////////////////////////////PLACE TO RUN USING API DATA/////////////////////////////////////////////	 	  
+	  
 	  
     
   } else {
