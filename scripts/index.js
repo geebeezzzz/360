@@ -73,6 +73,7 @@ fetch('data.json')
 			myOtherObj = data[1];
 			myOtherObj.firstName = 'olllla';
 			console.log(myOtherObj);
+			console.log(mrSlug);
 			////////////////////////////////////////////////////////////////
 			
             for (var i = 0; i < data.length; i++) {
