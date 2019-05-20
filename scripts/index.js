@@ -18,7 +18,7 @@ request.onload = function () {
 	
 	var data = JSON.parse(this.response)
 	
-	var mrSlug = JSON.parse(this.response.firstname)
+	mrSlug = data.response.firstname
 	console.log(mrSlug);
 	
   if (request.status >= 200 && request.status < 400) {
