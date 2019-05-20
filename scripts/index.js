@@ -22,6 +22,7 @@ request.onload = function () {
 	
 	  
 	  console.log(data.response.firstname);
+	  var mrSlug = JSON.parse(this.response.firstname)
 /////////////////////////////////////////////////////////////////PLACE TO RUN USING API DATA/////////////////////////////////////////////	 	  
 	  
 	  
@@ -61,6 +62,10 @@ fetch('data.json')
 			myObj = data[0]; 
 			myObj.firstName = 'ola';
 			console.log(myObj);
+		
+			myOtherObj = data[1];
+			myOtherObj.firstName = mySlug;
+			console.log(myOtherObj);
 			////////////////////////////////////////////////////////////////
 			
             for (var i = 0; i < data.length; i++) {
