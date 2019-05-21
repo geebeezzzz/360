@@ -63,6 +63,8 @@ fetch('data.json')
                 console.log('error: ' + err);
             });
 
+		setTimeout(appendData, 3000);
+
         function appendData(data) {
 			
             var mainContainer = document.getElementById("myData");
