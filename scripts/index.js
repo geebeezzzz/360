@@ -51,6 +51,9 @@ request.send()
 
 
 
+setTimeout(data, 3000);
+
+
 
 fetch('data.json')
             .then(function (response) {
@@ -70,7 +73,6 @@ fetch('data.json')
             var mainContainer = document.getElementById("myData");
 			
 			//////////////////////////////////CHANGING////////////////////////
-			setTimeout(data, 3000);
 			
 			myObj = data[0]; 
 			myObj.firstName = 'ola';
