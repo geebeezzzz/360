@@ -93,10 +93,10 @@ request.send()
 //
 //
 //
-//setTimeout(myWaiter, 800);
+setTimeout(myWaiter, 800);
 //
 //
-//function myWaiter() {
+function myWaiter() {
 	fetch('data.json')
             .then(function (response) {
                 return response.json();
@@ -117,6 +117,9 @@ request.send()
 //			//////////////////////////////////CHANGING////////////////////////
 			myObj = data;
 			console.log(myObj);
+			
+			myObj.v.layers.t.d.k.s.t = mrSlug.shield.title_text;
+			
 			
 //			myObj = data[0]; 
 //			myObj.firstName = 'ola';
@@ -143,7 +146,7 @@ request.send()
 //			//			myObj.firstName = "bad";
 //			//			console.log(myObj);		
 		}
-//	
-//	}
+	
+}
 
 
