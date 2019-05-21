@@ -21,7 +21,7 @@ request.onload = function () {
 	var data = JSON.parse(this.response)
 	
 	{
-	mrSlug = data.response.firstname;
+	mrSlug = data.response;
 	}
 	
 	console.log(mrSlug);
@@ -79,7 +79,8 @@ function myWaiter() {
 			console.log(myObj);
 		
 			myOtherObj = data[1];
-			myOtherObj.firstName = mrSlug;
+			myOtherObj.firstName = mrSlug.firstname;
+			myOtherObj.lastName = mrSlug.lastname;
 			console.log(myOtherObj);
 			console.log(mrSlug);
 			////////////////////////////////////////////////////////////////
