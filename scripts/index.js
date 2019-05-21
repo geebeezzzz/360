@@ -108,8 +108,6 @@ function myWaiter() {
                 console.log('error: ' + err);
             });
 
-		
-
         function appendData(data) {
 			
             var mainContainer = document.getElementById("myData");
@@ -120,6 +118,9 @@ function myWaiter() {
 			
 			myObj.v.layers.t.d.k.s.t = mrSlug.shield.title_text;
 			
+			
+			console.log(myObj.v.layers.t.d.k.s.t);
+			console.log(mrSlug.shield.title_text);
 			
 //			myObj = data[0]; 
 //			myObj.firstName = 'ola';
