@@ -51,11 +51,11 @@ request.send()
 
 
 
-setTimeout(data, 3000);
+setTimeout(myWaiter, 3000);
 
 
-
-fetch('data.json')
+function myWaiter() {
+	fetch('data.json')
             .then(function (response) {
                 return response.json();
             })
@@ -98,3 +98,5 @@ fetch('data.json')
 //			myObj.firstName = "bad";
 //			console.log(myObj);		
 		}
+	
+	}
