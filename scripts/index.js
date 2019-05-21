@@ -51,7 +51,7 @@ request.send()
 
 
 
-setTimeout(myWaiter, 3000);
+setTimeout(myWaiter, 400);
 
 
 function myWaiter() {
@@ -79,7 +79,7 @@ function myWaiter() {
 			console.log(myObj);
 		
 			myOtherObj = data[1];
-			myOtherObj.firstName = 'olllla';
+			myOtherObj.firstName = mrSlug;
 			console.log(myOtherObj);
 			console.log(mrSlug);
 			////////////////////////////////////////////////////////////////
