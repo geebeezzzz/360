@@ -34,6 +34,8 @@ function getQueryVariable(variable)
 console.log(getQueryVariable("slug"));
 
 
+//                https://youthful-feynman-7811c2.netlify.com/?slug=david-pedersen
+
 /////////////////////////////////////////////////////////////////GET URL INFO OUT/////////////////////////////////////////////	
 
 
@@ -44,7 +46,8 @@ var mrSlug = 'startState'
 var request = new XMLHttpRequest()
 
 // Open a new connection, using the GET request on the URL endpoint
-request.open('GET', 'https://staging-api.tonsser.com/50/users/david-pedersen', true)
+request.open('GET', 'https://staging-api.tonsser.com/50/users/' + getQueryVariable("slug"), true) // getting the user slug from the metaData
+// request.open('GET', 'https://staging-api.tonsser.com/50/users/david-pedersen', true) // original api call
 
 request.onload = function () {
 	
