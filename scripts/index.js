@@ -51,7 +51,7 @@ request.send()
 
 
 
-setTimeout(myWaiter, 600);
+setTimeout(myWaiter, 800);
 
 
 function myWaiter() {
