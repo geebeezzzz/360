@@ -63,13 +63,15 @@ fetch('data.json')
                 console.log('error: ' + err);
             });
 
-		setTimeout(appendData, 3000);
+		
 
         function appendData(data) {
 			
             var mainContainer = document.getElementById("myData");
 			
 			//////////////////////////////////CHANGING////////////////////////
+			setTimeout(data, 3000);
+			
 			myObj = data[0]; 
 			myObj.firstName = 'ola';
 			console.log(myObj);
