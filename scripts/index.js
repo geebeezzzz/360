@@ -116,10 +116,10 @@ function myWaiter() {
 			myObj = data;
 			console.log(myObj);
 			
-			myObj.v.layers.t.d.k.s.t = mrSlug.shield.title_text;
+			// myObj.v.layers.t.d.k.s.t = mrSlug.shield.title_text;
 			
 			
-			console.log(myObj.v.layers.t.d.k.s.t);
+			// console.log(myObj.v.layers.t.d.k.s.t);
 			console.log(mrSlug.shield.title_text);
 			
 			///////////////////IMAGE//////////////////
