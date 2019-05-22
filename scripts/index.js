@@ -119,10 +119,11 @@ function myWaiter() {
 			///////////////////IMAGE//////////////////
 			
 			imgURL = mrSlug.profile_picture;
-			console.log(imgURL.substr(0,imgURL.lastIndexOf('/')));
+			console.log(imgURL.substr(0,imgURL.lastIndexOf('/')) + '/');
+			console.log(imgURL.replace(/^.*[\\\/]/, ''));
 			
 			myObj.assets[0].u = imgURL.substr(0,imgURL.lastIndexOf('/')) + '/';
-			//myObj.assets[0].p = imgURL - imgURL.substr(0,imgURL.lastIndexOf('/')) + '/';
+			myObj.assets[0].p = imgURL.replace(/^.*[\\\/]/, '');
 			
 			
 			
