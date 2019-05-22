@@ -122,8 +122,10 @@ function myWaiter() {
 				};
 		
 		
+		
 		function myLottieWaiter(){
 				anim = lottie.loadAnimation(animData);
+				anim.layers[11].t.d.k[0].s.updateDocumentData({t:'new text', s:20},0);
 		}
 		
 		
