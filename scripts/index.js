@@ -126,6 +126,12 @@ function myWaiter() {
 			myObj.assets[0].u = imgURL.substr(0,imgURL.lastIndexOf('/')) + '/';
 			myObj.assets[0].p = imgURL.replace(/^.*[\\\/]/, '');
 			
+			//////////////TEXT////////////////////////////////////////
+			myObj.assets[3].layers[1].t.d.k[0].s.t = mrSlug.shield.title_text; //Player Name
+			myObj.assets[3].layers[0].t.d.k[0].s.t = mrSlug.shield.subtitle_text; //Club Name
+			
+			
+			
 			
 			
 //			myObj = data[0]; 
