@@ -126,7 +126,7 @@ function myWaiter() {
 		function myLottieWaiter(){
 				anim = lottie.loadAnimation(animData);
 				newText = myObj.layers[11].t.d.k[0].s;
-				anim.renderer.newText.updateDocumentData({t:'new text', s:20},0);
+				anim.renderer.newText.updateDocumentData({t:'new text'});
 		}
 		
 		
