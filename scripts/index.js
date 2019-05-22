@@ -115,14 +115,10 @@ function myWaiter() {
 		var anim;
 			var animData = {
 				  container: document.getElementById('POTW'),
-				  path: 'data.json', // Required
 				  renderer: 'svg',
 				  loop: true,
 				  autoplay: true,
-				  rendererSettings: {
-					progressiveLoad: false
-				  },
-				  animationData: 'data.json'
+				  path: 'data.json',
 				};
 				anim = lottie.loadAnimation(animData);
 		
