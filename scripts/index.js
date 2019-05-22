@@ -1,11 +1,5 @@
 // JavaScript Document
-var animation = bodymovin.loadAnimation({
-  container: document.getElementById('POTW'),
-  renderer: 'svg',
-  loop: true,
-  autoplay: true,
-  path: 'data.json'
-})
+
 
 
 //
@@ -128,7 +122,7 @@ function myWaiter() {
 			console.log(imgURL.substr(0,imgURL.lastIndexOf('/')));
 			
 			myObj.assets[0].u = imgURL.substr(0,imgURL.lastIndexOf('/')) + '/';
-			myObj.assets[0].p = imgURL - imgURL.substr(0,imgURL.lastIndexOf('/')) + '/';
+			//myObj.assets[0].p = imgURL - imgURL.substr(0,imgURL.lastIndexOf('/')) + '/';
 			
 			
 			
@@ -157,6 +151,14 @@ function myWaiter() {
 //			//			myObj.firstName = "bad";
 //			//			console.log(myObj);		
 		}
+	
+	var animation = bodymovin.loadAnimation({
+	  container: document.getElementById('POTW'),
+	  renderer: 'svg',
+	  loop: true,
+	  autoplay: true,
+	  path: 'data.json'
+	})
 	
 }
 
