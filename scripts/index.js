@@ -140,7 +140,7 @@ function myWaiter() {
 				  },
 				  animationData: 'data.json'
 				};
-				anim = bodymovin.loadAnimation(animData);
+				anim = lottie.loadAnimation(animData);
 		
 		
 		
