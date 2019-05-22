@@ -128,17 +128,34 @@ function myWaiter() {
 			myObj.layers[11].t.d.k[0].s.t = mrSlug.team.league.name //League Name
 			
 			setTimeout(myLottieWaiter, 4000);
-			function myLottieWaiter(){
-				var animation = bodymovin.loadAnimation({
+		
+		var anim;
+			var animData = {
 				  container: document.getElementById('POTW'),
 				  renderer: 'svg',
 				  loop: true,
 				  autoplay: true,
-				  path: 'data.json',
-				})
+				  rendererSettings: {
+					progressiveLoad: false
+				  },
+				  animationData: 'data.json'
+				};
+				anim = bodymovin.loadAnimation(animData);
+		
+		
+		
+		
+//			function myLottieWaiter(){
+//				var animation = bodymovin.loadAnimation({
+//				  container: document.getElementById('POTW'),
+//				  renderer: 'svg',
+//				  loop: true,
+//				  autoplay: true,
+//				  path: 'data.json',
+//				})
 			
-			animation.renderer.elements[0].updateDocumentData({t:'aaaaaaaah change'});
-			// animation.renderer.assets[3].layers[1].t.d.k[0].s.updateDocumentData({t:'aaaaaaaah change'});
+			//animation.renderer.elements[0].updateDocumentData({t:'aaaaaaaah change'});
+			//animation.renderer.assets.layers[1].t.d.k[0].s.updateDocumentData({t:'aaaaaaaah change'});
 
 			}
 		
