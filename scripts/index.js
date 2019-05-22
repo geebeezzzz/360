@@ -88,6 +88,7 @@ request.send()
 //
 //
 setTimeout(myWaiter, 800);
+setTimeout(myLottieWaiter, 1000);
 //
 //
 function myWaiter() {
@@ -152,15 +153,18 @@ function myWaiter() {
 //			//			myObj.firstName = "bad";
 //			//			console.log(myObj);		
 		}
-	
-	var animation = bodymovin.loadAnimation({
-	  container: document.getElementById('POTW'),
-	  renderer: 'svg',
-	  loop: true,
-	  autoplay: true,
-	  path: 'data.json'
-	})
-	
+}
+
+
+function myLottieWaiter(){
+		var animation = bodymovin.loadAnimation({
+		  container: document.getElementById('POTW'),
+		  renderer: 'svg',
+		  loop: true,
+		  autoplay: true,
+		  path: 'data.json'
+		})
+
 }
 
 
