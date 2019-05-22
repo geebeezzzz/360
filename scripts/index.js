@@ -110,7 +110,7 @@ function myWaiter() {
 			myObj.layers[7].t.d.k[0].s.t = mrSlug.team.league.name //League Name
 			myObj.layers[11].t.d.k[0].s.t = mrSlug.team.league.name //League Name
 			
-	setTimeout(myLottieWaiter, 4000);
+	setTimeout(myLottieWaiter, 3000);
 	
 		var anim;
 			var animData = {
@@ -125,7 +125,8 @@ function myWaiter() {
 		
 		function myLottieWaiter(){
 				anim = lottie.loadAnimation(animData);
-				anim.renderer.layers[11].t.d.k[0].s.updateDocumentData({t:'new text', s:20},0);
+				newText = myObj.layers[11].t.d.k[0].s;
+				anim.renderer.newText.updateDocumentData({t:'new text', s:20},0);
 		}
 		
 		
