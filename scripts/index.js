@@ -122,6 +122,12 @@ function myWaiter() {
 			console.log(myObj.v.layers.t.d.k.s.t);
 			console.log(mrSlug.shield.title_text);
 			
+			///////////////////IMAGE//////////////////
+			
+			myObj.assets[0]p = mrSlug.profile_picture;
+			
+			
+			
 //			myObj = data[0]; 
 //			myObj.firstName = 'ola';
 //			console.log(myObj);
