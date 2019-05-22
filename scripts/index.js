@@ -126,12 +126,9 @@ function myWaiter() {
 			
 			imgURL = mrSlug.profile_picture;
 			console.log(imgURL.substr(0,imgURL.lastIndexOf('/')));
-			console.log(imgURL.fileName);
 			
-			
-			
-			// myObj.assets[0]p = mrSlug.profile_picture;
-			
+			myObj.assets[0].u = imgURL.substr(0,imgURL.lastIndexOf('/')) + '/';
+			myObj.assets[0].p = imgURL - imgURL.substr(0,imgURL.lastIndexOf('/')) + '/';
 			
 			
 			
