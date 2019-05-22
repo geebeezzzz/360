@@ -110,8 +110,8 @@ function myWaiter() {
 			myObj.layers[7].t.d.k[0].s.t = mrSlug.team.league.name //League Name
 			myObj.layers[11].t.d.k[0].s.t = mrSlug.team.league.name //League Name
 			
-//	setTimeout(myLottieWaiter, 4000);
-//	function myLottieWaiter(){
+	setTimeout(myLottieWaiter, 4000);
+	
 		var anim;
 			var animData = {
 				  container: document.getElementById('POTW'),
@@ -120,8 +120,11 @@ function myWaiter() {
 				  autoplay: true,
 				  path: 'data.json',
 				};
-				anim = lottie.loadAnimation(animData);
 		
+		
+		function myLottieWaiter(){
+				anim = lottie.loadAnimation(animData);
+		}
 		
 		
 		
