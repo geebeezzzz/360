@@ -137,7 +137,8 @@ function myWaiter() {
 				  path: 'data.json',
 				})
 			
-			animation.renderer.assets[3].layers[1].t.d.k[0].s.updateDocumentData({t:'new text', s:20},0);
+			animation.renderer.elements[0].updateDocumentData({t:'aaaaaaaah change'});
+			// animation.renderer.assets[3].layers[1].t.d.k[0].s.updateDocumentData({t:'aaaaaaaah change'});
 
 			}
 		
