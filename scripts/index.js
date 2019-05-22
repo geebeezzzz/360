@@ -120,7 +120,7 @@ function myWaiter() {
 			
 			
 			// console.log(myObj.v.layers.t.d.k.s.t);
-			console.log(mrSlug.shield.title_text);
+			// console.log(mrSlug.shield.title_text);
 			
 			///////////////////IMAGE//////////////////
 			
