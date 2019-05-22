@@ -127,8 +127,8 @@ function myWaiter() {
 			myObj.layers[7].t.d.k[0].s.t = mrSlug.team.league.name //League Name
 			myObj.layers[11].t.d.k[0].s.t = mrSlug.team.league.name //League Name
 			
-			setTimeout(myLottieWaiter, 4000);
-		
+//	setTimeout(myLottieWaiter, 4000);
+//	function myLottieWaiter(){
 		var anim;
 			var animData = {
 				  container: document.getElementById('POTW'),
@@ -145,7 +145,7 @@ function myWaiter() {
 		
 		
 		
-//			function myLottieWaiter(){
+
 //				var animation = bodymovin.loadAnimation({
 //				  container: document.getElementById('POTW'),
 //				  renderer: 'svg',
@@ -153,11 +153,11 @@ function myWaiter() {
 //				  autoplay: true,
 //				  path: 'data.json',
 //				})
-			
+//			}
 			//animation.renderer.elements[0].updateDocumentData({t:'aaaaaaaah change'});
 			//animation.renderer.assets.layers[1].t.d.k[0].s.updateDocumentData({t:'aaaaaaaah change'});
 
-			}
+			
 		
 	}
 }
