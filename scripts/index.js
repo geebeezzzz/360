@@ -1,24 +1,7 @@
 // JavaScript Document
 
+const app = document.getElementById('root')
 
-
-//
-//
-//
-//const app = document.getElementById('root')
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 ///////////////////////////////////////////////////////////////////GET URL INFO OUT/////////////////////////////////////////////	
 
 
@@ -140,7 +123,7 @@ function myWaiter() {
 				  },
 				  animationData: 'data.json'
 				};
-				anim = lottie.loadAnimation(animData);
+				anim = bodymovin.loadAnimation(animData);
 		
 		
 		
