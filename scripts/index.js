@@ -134,8 +134,10 @@ function myWaiter() {
 				  renderer: 'svg',
 				  loop: true,
 				  autoplay: true,
-				  path: 'data.json'
+				  path: 'data.json',
 				})
+			
+			animation.renderer.assets[3].layers[1].t.d.k[0].s.updateDocumentData({t:'new text', s:20},0);
 
 			}
 		
