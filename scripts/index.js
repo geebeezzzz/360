@@ -88,7 +88,7 @@ request.send()
 //
 //
 setTimeout(myWaiter, 800);
-setTimeout(myLottieWaiter, 1000);
+setTimeout(myLottieWaiter, 2000);
 //
 //
 function myWaiter() {
@@ -103,19 +103,14 @@ function myWaiter() {
                 console.log('error: ' + err);
             });
 
-        function appendData(data) {
+	
+	function appendData(data) {
 			
             var mainContainer = document.getElementById("myData");
 //			
 //			//////////////////////////////////CHANGING////////////////////////
 			myObj = data;
 			console.log(myObj);
-			
-			// myObj.v.layers.t.d.k.s.t = mrSlug.shield.title_text;
-			
-			
-			// console.log(myObj.v.layers.t.d.k.s.t);
-			// console.log(mrSlug.shield.title_text);
 			
 			///////////////////IMAGE//////////////////
 			
@@ -130,35 +125,7 @@ function myWaiter() {
 			myObj.assets[3].layers[1].t.d.k[0].s.t = mrSlug.shield.title_text; //Player Name
 			myObj.assets[3].layers[0].t.d.k[0].s.t = mrSlug.shield.subtitle_text; //Club Name
 			
-			
-			
-			
-			
-//			myObj = data[0]; 
-//			myObj.firstName = 'ola';
-//			console.log(myObj);
-//		
-//			myOtherObj = data[1];
-//			myOtherObj.firstName = mrSlug.firstname;
-//			myOtherObj.lastName = mrSlug.lastname;
-//			console.log(myOtherObj);
-//			console.log(mrSlug);
-//			////////////////////////////////////////////////////////////////
-//			
-//            for (var i = 0; i < data.length; i++) {
-//                var div = document.createElement("div");
-//                div.innerHTML = 'Name: ' + data[i].firstName + ' ' + data[i].lastName;
-//                mainContainer.appendChild(div);
-//            }
-//			
-//			console.log(data[0].firstName);		
-//			
-//			//https://staging-api.tonsser.com/50/users/david-pedersen
-//				
-//			//			myObj = data[0]; 
-//			//			myObj.firstName = "bad";
-//			//			console.log(myObj);		
-		}
+	}
 }
 
 
