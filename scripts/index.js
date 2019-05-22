@@ -88,7 +88,7 @@ request.send()
 //
 //
 setTimeout(myWaiter, 800);
-setTimeout(myLottieWaiter, 4000);
+
 //
 //
 function myWaiter() {
@@ -127,6 +127,7 @@ function myWaiter() {
 			myObj.layers[7].t.d.k[0].s.t = mrSlug.team.league.name //League Name
 			myObj.layers[11].t.d.k[0].s.t = mrSlug.team.league.name //League Name
 			
+			setTimeout(myLottieWaiter, 4000);
 			function myLottieWaiter(){
 				var animation = bodymovin.loadAnimation({
 				  container: document.getElementById('POTW'),
