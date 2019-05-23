@@ -119,20 +119,29 @@ function myWaiter() {
 				  loop: true,
 				  autoplay: false,
 				  path: 'data.json',
+				  assetsPath: '',
 				};
 		
 			var anim = lottie.loadAnimation(animData);
 		
 			anim.addEventListener("DOMLoaded", function() {
-					newText = layers[4].layers[1];
+//			
 					console.log(anim.renderer);
 					console.log(anim.renderer.layers);
 					console.log(anim.renderer.layers[2].layers[1]);
-					anim.renderer.elements[7].updateDocumentData({t:'new text'}); //LEAUGE NAME
-					anim.renderer.elements[11].updateDocumentData({t:'new text'}); //LEAUGE NAME
-					anim.renderer.newText.updateDocumentData({t:'mrSlug.shield.title_text'}); //Player Name
-//					anim.renderer.layers[4].layers[1].updateDocumentData({t:mrSlug.shield.title_text}); //Player Name
-//					anim.renderer.layers[2].layers[0].updateDocumentData({t:mrSlug.shield.subtitle_text}); //Club Name
+					anim.renderer.elements[7].updateDocumentData({t:mrSlug.team.league.name}); //LEAUGE NAME
+					anim.renderer.elements[11].updateDocumentData({t:mrSlug.team.league.name}); //LEAUGE NAME
+					anim.renderer.elements[2].elements[1].updateDocumentData({t:mrSlug.shield.title_text}); //Player Name
+					anim.renderer.elements[2].elements[0].updateDocumentData({t:mrSlug.shield.subtitle_text}); //Club Name
+					anim.renderer.elements[2].elements[4].updateDocumentData({t:mrSlug.shield.user.primary_position.localized_abbreviation}); //Player Position
+														
+					///////////////////////////IMAGE TEST/////////////////////////////////////////////
+					//anim.renderer.updateBitmap("image_1",mrSlug.profile_picture);
+//					anim.renderer.elements[2].elements[2].updateDocumentData({u:imgURL.substr(0,imgURL.lastIndexOf('/')) + '/'}); //Profile Image
+//					anim.renderer.elements[2].elements[2].updateDocumentData({p:imgURL.replace(/^.*[\\\/]/, '')}); //Profile Image
+					/////////////////////////////////////////////////////////////////////////////
+				
+//					anim.renderer.layers[2].layers[0].updateDocumentData({t:mrSlug.shield.subtitle_text}); 
 //					anim.renderer.layers[4].layers[0].updateDocumentData({t:mrSlug.shield.subtitle_text}); //Club Name
 					anim.play();
 				})
