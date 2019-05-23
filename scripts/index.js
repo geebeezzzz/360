@@ -124,13 +124,13 @@ function myWaiter() {
 			var anim = lottie.loadAnimation(animData);
 		
 			anim.addEventListener("DOMLoaded", function() {
-					newText = renderer.layers[4].layers[1];
+					newText = layers[4].layers[1];
 					console.log(anim.renderer);
 					console.log(anim.renderer.layers);
 					console.log(anim.renderer.layers[2].layers[1]);
 					anim.renderer.elements[7].updateDocumentData({t:'new text'}); //LEAUGE NAME
 					anim.renderer.elements[11].updateDocumentData({t:'new text'}); //LEAUGE NAME
-					anim.newText.updateDocumentData({t:'mrSlug.shield.title_text'}); //Player Name
+					anim.renderer.newText.updateDocumentData({t:'mrSlug.shield.title_text'}); //Player Name
 //					anim.renderer.layers[4].layers[1].updateDocumentData({t:mrSlug.shield.title_text}); //Player Name
 //					anim.renderer.layers[2].layers[0].updateDocumentData({t:mrSlug.shield.subtitle_text}); //Club Name
 //					anim.renderer.layers[4].layers[0].updateDocumentData({t:mrSlug.shield.subtitle_text}); //Club Name
