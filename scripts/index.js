@@ -123,16 +123,19 @@ function myWaiter() {
 		
 			var anim = lottie.loadAnimation(animData);
 		
-			function myLottieWaiter(){
-				/////////////////////ADD LISTENER//////////////////////////////////////////////			
-				anim.addEventListener("DOMLoaded", function() {
+			anim.addEventListener("DOMLoaded", function() {
 					newText = myObj.layers[11].t.d.k[0].s;
 					console.log(anim.renderer);
 					console.log(anim.renderer.layers);
 					console.log(anim.renderer);
-//					anim.renderer.newText.updateDocumentData({t:'new text'});
 					anim.play();
-				});
+				})
+		
+			function myLottieWaiter(){
+				/////////////////////ADD LISTENER//////////////////////////////////////////////			
+
+//					anim.renderer.newText.updateDocumentData({t:'new text'});
+				
 			}
 								  
 				
