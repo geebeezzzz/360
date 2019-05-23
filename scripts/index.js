@@ -112,7 +112,7 @@ function myWaiter() {
 			
 			setTimeout(myLottieWaiter, 3000);
 	
-			var anim;
+			
 			var animData = {
 				  container: document.getElementById('POTW'),
 				  renderer: 'svg',
@@ -121,20 +121,17 @@ function myWaiter() {
 				  path: 'data.json',
 				};
 		
-		
+			var anim = lottie.loadAnimation(animData);
 		
 			function myLottieWaiter(){
-			
-				anim = lottie.loadAnimation(animData);
-			
+				/////////////////////ADD LISTENER//////////////////////////////////////////////			
 				anim.addEventListener("DOMLoaded", function() {
-			
-						
 					newText = myObj.layers[11].t.d.k[0].s;
-					anim.renderer.newText.updateDocumentData({t:'new text'});
-					
+					console.log(anim.renderer);
+					console.log(anim.renderer.layers);
+					console.log(anim.renderer);
+//					anim.renderer.newText.updateDocumentData({t:'new text'});
 					anim.play();
-					
 				});
 			}
 								  
