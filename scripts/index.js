@@ -124,7 +124,7 @@ function myWaiter() {
 			var anim = lottie.loadAnimation(animData);
 		
 			anim.addEventListener("DOMLoaded", function() {
-					newText = renderer.layers[4].layers[1]
+					newText = renderer.layers[4].layers[1];
 					console.log(anim.renderer);
 					console.log(anim.renderer.layers);
 					console.log(anim.renderer.layers[2].layers[1]);
