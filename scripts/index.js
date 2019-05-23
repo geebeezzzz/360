@@ -130,7 +130,7 @@ function myWaiter() {
 					console.log(anim.renderer.layers[2].layers[1]);
 					anim.renderer.elements[7].updateDocumentData({t:'new text'}); //LEAUGE NAME
 					anim.renderer.elements[11].updateDocumentData({t:'new text'}); //LEAUGE NAME
-//					anim.renderer.layers[2].layers[1].updateDocumentData({t:mrSlug.shield.title_text}); //Player Name
+					anim.renderer.layers[2].layers[1].t.d.k[0].s.updateDocumentData({t:mrSlug.shield.title_text}); //Player Name
 //					anim.renderer.layers[4].layers[1].updateDocumentData({t:mrSlug.shield.title_text}); //Player Name
 //					anim.renderer.layers[2].layers[0].updateDocumentData({t:mrSlug.shield.subtitle_text}); //Club Name
 //					anim.renderer.layers[4].layers[0].updateDocumentData({t:mrSlug.shield.subtitle_text}); //Club Name
