@@ -127,7 +127,10 @@ function myWaiter() {
 					newText = myObj.layers[11].t.d.k[0].s;
 					console.log(anim.renderer);
 					console.log(anim.renderer.layers);
-					anim.renderer.elements[7].updateDocumentData({t:'new text'});
+					anim.renderer.elements[7].updateDocumentData({t:'new text'}); //LEAUGE NAME
+					anim.renderer.elements[11].updateDocumentData({t:'new text'}); //LEAUGE NAME
+					anim.renderer.elements[7].updateDocumentData({t:mrSlug.shield.title_text}); //Player Name
+					anim.renderer.elements[11].updateDocumentData({t:mrSlug.shield.subtitle_text}); //Club Name
 					anim.play();
 				})
 		
