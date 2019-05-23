@@ -127,7 +127,7 @@ function myWaiter() {
 					newText = myObj.layers[11].t.d.k[0].s;
 					console.log(anim.renderer);
 					console.log(anim.renderer.layers);
-					console.log(anim.renderer);
+					anim.renderer.elements[7].updateDocumentData({t:'new text'});
 					anim.play();
 				})
 		
