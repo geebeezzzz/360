@@ -29,3 +29,22 @@ body {
             text-align: center;
             opacity: 1;
 		}
+
+#LeagueName, #POTW_Text {
+	
+	color:green;
+	background-color: coral;
+	font-size: 200px;
+	border:20px solid Tomato;
+	content: 'whatever it is you want to add';
+	
+}
+
+#Profile, #Profile {
+/*
+	image: url('images/my-image.png');
+	border:20px solid Tomato;
+	background-color: lightblue;
+*/
+	
+}

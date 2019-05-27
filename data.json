@@ -11,14 +11,14 @@
 		"id": "image_0",
 		"w": 460,
 		"h": 460,
-		"u": "/images/",
+		"u": "images/",
 		"p": "img_0.png",
 		"e": 0
 	}, {
 		"id": "image_1",
 		"w": 638,
 		"h": 640,
-		"u": "/images/",
+		"u": "images/",
 		"p": "img_1.png",
 		"e": 0
 	}, {
@@ -6654,7 +6654,77 @@
 			"ddd": 0,
 			"ind": 1,
 			"ty": 5,
-			"nm": "CLUB NAME",
+			"nm": "#Position",
+			"ln": "Position",
+			"sr": 1,
+			"ks": {
+				"o": {
+					"a": 0,
+					"k": 100,
+					"ix": 11
+				},
+				"r": {
+					"a": 0,
+					"k": 0,
+					"ix": 10
+				},
+				"p": {
+					"a": 0,
+					"k": [351.26, 668.672, 0],
+					"ix": 2
+				},
+				"a": {
+					"a": 0,
+					"k": [0, 0, 0],
+					"ix": 1
+				},
+				"s": {
+					"a": 0,
+					"k": [100, 100, 100],
+					"ix": 6
+				}
+			},
+			"ao": 0,
+			"t": {
+				"d": {
+					"k": [{
+						"s": {
+							"s": 60,
+							"f": "Roboto-Black",
+							"t": "ST",
+							"j": 0,
+							"tr": 0,
+							"lh": 72,
+							"ls": 0,
+							"fc": [0, 0, 0],
+							"sc": [1, 1, 1],
+							"sw": 0.00999999977648,
+							"of": false
+						},
+						"t": 0
+					}]
+				},
+				"p": {},
+				"m": {
+					"g": 1,
+					"a": {
+						"a": 0,
+						"k": [0, 0],
+						"ix": 2
+					}
+				},
+				"a": []
+			},
+			"ip": 0,
+			"op": 250,
+			"st": 0,
+			"bm": 0
+		}, {
+			"ddd": 0,
+			"ind": 2,
+			"ty": 5,
+			"nm": "#ClubName",
+			"ln": "ClubName",
 			"parent": 7,
 			"sr": 1,
 			"ks": {
@@ -6721,9 +6791,10 @@
 			"bm": 0
 		}, {
 			"ddd": 0,
-			"ind": 2,
+			"ind": 3,
 			"ty": 5,
-			"nm": "FIRST NAME SECOND NAME",
+			"nm": "#Name",
+			"ln": "Name",
 			"parent": 7,
 			"sr": 1,
 			"ks": {
@@ -6790,10 +6861,10 @@
 			"bm": 0
 		}, {
 			"ddd": 0,
-			"ind": 3,
+			"ind": 4,
 			"ty": 2,
-			"nm": "logo.png",
-			"cl": "png",
+			"nm": "#ClubLogo",
+			"ln": "ClubLogo",
 			"parent": 7,
 			"refId": "image_0",
 			"sr": 1,
@@ -6831,7 +6902,7 @@
 			"bm": 0
 		}, {
 			"ddd": 0,
-			"ind": 4,
+			"ind": 5,
 			"ty": 4,
 			"nm": "Club_Holder",
 			"parent": 7,
@@ -6946,75 +7017,6 @@
 				"mn": "ADBE Vector Group",
 				"hd": false
 			}],
-			"ip": 0,
-			"op": 250,
-			"st": -147,
-			"bm": 0
-		}, {
-			"ddd": 0,
-			"ind": 5,
-			"ty": 5,
-			"nm": "ST",
-			"parent": 7,
-			"sr": 1,
-			"ks": {
-				"o": {
-					"a": 0,
-					"k": 100,
-					"ix": 11
-				},
-				"r": {
-					"a": 0,
-					"k": 0,
-					"ix": 10
-				},
-				"p": {
-					"a": 0,
-					"k": [-200, 317.184, 0],
-					"ix": 2
-				},
-				"a": {
-					"a": 0,
-					"k": [0, -100, 0],
-					"ix": 1
-				},
-				"s": {
-					"a": 0,
-					"k": [138, 138, 100],
-					"ix": 6
-				}
-			},
-			"ao": 0,
-			"t": {
-				"d": {
-					"k": [{
-						"s": {
-							"s": 60,
-							"f": "Roboto-Black",
-							"t": "ST",
-							"j": 2,
-							"tr": 0,
-							"lh": 72,
-							"ls": 44,
-							"fc": [0, 0, 0],
-							"sc": [1, 1, 1],
-							"sw": 0.00999999977648,
-							"of": false
-						},
-						"t": 0
-					}]
-				},
-				"p": {},
-				"m": {
-					"g": 1,
-					"a": {
-						"a": 0,
-						"k": [0, 0],
-						"ix": 2
-					}
-				},
-				"a": []
-			},
 			"ip": 0,
 			"op": 250,
 			"st": -147,
@@ -7265,7 +7267,8 @@
 			"ddd": 0,
 			"ind": 8,
 			"ty": 2,
-			"nm": "Profile",
+			"nm": "#Profile",
+			"ln": "Profile",
 			"parent": 7,
 			"tt": 1,
 			"refId": "image_1",
@@ -14318,7 +14321,8 @@
 		"ddd": 0,
 		"ind": 7,
 		"ty": 5,
-		"nm": "PLAYER OF THE WEEK",
+		"nm": "#POTW_Text",
+		"ln": "POTW_Text",
 		"sr": 1,
 		"ks": {
 			"o": {
@@ -14461,7 +14465,8 @@
 		"ddd": 0,
 		"ind": 8,
 		"ty": 5,
-		"nm": "LEAGUE NAME",
+		"nm": "#LeagueName",
+		"ln": "LeagueName",
 		"sr": 1,
 		"ks": {
 			"o": {
@@ -14645,7 +14650,8 @@
 		"ddd": 0,
 		"ind": 10,
 		"ty": 5,
-		"nm": "PLAYER OF THE WEEK",
+		"nm": "#POTW_Text",
+		"ln": "POTW_Text",
 		"sr": 1,
 		"ks": {
 			"o": {
@@ -14829,7 +14835,8 @@
 		"ddd": 0,
 		"ind": 12,
 		"ty": 5,
-		"nm": "LEAGUE NAME",
+		"nm": "#LeagueName",
+		"ln": "LeagueName",
 		"sr": 1,
 		"ks": {
 			"o": {
