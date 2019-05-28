@@ -160,11 +160,11 @@ function myWaiter() {
 				
 
 //				anim.renderer.elements[2].elements[7].innerElem.href.animVal = mrSlug.profile_picture;
-				anim.renderer.elements[2].elements[7].innerElem.href.baseVal = mrSlug.profile_picture;				
+				anim.renderer.elements[2].elements[7].innerElem.href.baseVal = mrSlug.profile_picture.replace("http://","https://");				
 //				anim.renderer.elements[4].elements[7].innerElem.href.animVal = mrSlug.profile_picture;
-				anim.renderer.elements[4].elements[7].innerElem.href.baseVal = mrSlug.profile_picture;
-				anim.renderer.elements[2].elements[3].innerElem.href.baseVal = mrSlug.club.logo_url;
-				anim.renderer.elements[4].elements[3].innerElem.href.baseVal = mrSlug.club.logo_url;
+				anim.renderer.elements[4].elements[7].innerElem.href.baseVal = mrSlug.profile_picture.replace("http://","https://");
+				anim.renderer.elements[2].elements[3].innerElem.href.baseVal = mrSlug.club.logo_url.replace("http://","https://");
+				anim.renderer.elements[4].elements[3].innerElem.href.baseVal = mrSlug.club.logo_urlreplace("http://","https://");
 			
 				
 //				anim.renderer.elements[2].elements[7].assetData.p = mrSlug.profile_picture.replace(/^.*[\\\/]/, '');
