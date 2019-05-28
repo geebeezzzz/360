@@ -70,7 +70,7 @@ function myWaiter() {
 			//var replaceMe = toReplace.replace(mrSlug.shield.title_text);
 			
 			console.log(data.assets[3].layers[1].t.d.k[0].s.t);
-		import ('https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie.js');
+			import ('https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie.js');
 //            var mainContainer = document.getElementById("myData");
 //			myObj = data;
 //			console.log(myObj);
@@ -157,20 +157,41 @@ function myWaiter() {
 				
 				
 				//IMAGES
-				anim.renderer.globalData.imageLoader.images[0].p = mrSlug.profile_picture.replace(/^.*[\\\/]/, '');
-				anim.renderer.globalData.imageLoader.images[0].u = mrSlug.profile_picture.substr(0,mrSlug.profile_picture.lastIndexOf('/')) + '/';
-				anim.renderer.globalData.imageLoader.images[1].p = mrSlug.profile_picture.replace(/^.*[\\\/]/, '');
-				anim.renderer.globalData.imageLoader.images[1].u = mrSlug.profile_picture.substr(0,mrSlug.profile_picture.lastIndexOf('/')) + '/';
 				
+
+//				anim.renderer.elements[2].elements[7].innerElem.href.animVal = mrSlug.profile_picture;
+				anim.renderer.elements[2].elements[7].innerElem.href.baseVal = mrSlug.profile_picture;				
+//				anim.renderer.elements[4].elements[7].innerElem.href.animVal = mrSlug.profile_picture;
+				anim.renderer.elements[4].elements[7].innerElem.href.baseVal = mrSlug.profile_picture;
+				anim.renderer.elements[2].elements[3].innerElem.href.baseVal = mrSlug.club.logo_url;
+				anim.renderer.elements[4].elements[3].innerElem.href.baseVal = mrSlug.club.logo_url;
+			
 				
-				anim.renderer.animationItem.assets[0].p = mrSlug.profile_picture.replace(/^.*[\\\/]/, '');
-				anim.renderer.animationItem.assets[0].u = mrSlug.profile_picture.substr(0,mrSlug.profile_picture.lastIndexOf('/')) + '/';	
-				anim.renderer.animationItem.assets[1].p = mrSlug.profile_picture.replace(/^.*[\\\/]/, '');
-				anim.renderer.animationItem.assets[1].u = mrSlug.profile_picture.substr(0,mrSlug.profile_picture.lastIndexOf('/')) + '/';	
+//				anim.renderer.elements[2].elements[7].assetData.p = mrSlug.profile_picture.replace(/^.*[\\\/]/, '');
+//				anim.renderer.elements[2].elements[7].assetData.u = mrSlug.profile_picture.substr(0,mrSlug.profile_picture.lastIndexOf('/')) + '/';	
+//				anim.renderer.globalData.imageLoader.images[0].p = mrSlug.profile_picture.replace(/^.*[\\\/]/, '');
+//				anim.renderer.globalData.imageLoader.images[0].u = mrSlug.profile_picture.substr(0,mrSlug.profile_picture.lastIndexOf('/')) + '/';
+//				anim.renderer.globalData.imageLoader.images[1].p = mrSlug.profile_picture.replace(/^.*[\\\/]/, '');
+//				anim.renderer.globalData.imageLoader.images[1].u = mrSlug.profile_picture.substr(0,mrSlug.profile_picture.lastIndexOf('/')) + '/';
+//				anim.renderer.animationItem.assets[0].p = mrSlug.profile_picture.replace(/^.*[\\\/]/, '');
+//				anim.renderer.animationItem.assets[0].u = mrSlug.profile_picture.substr(0,mrSlug.profile_picture.lastIndexOf('/')) + '/';	
+//				anim.renderer.animationItem.assets[1].p = mrSlug.profile_picture.replace(/^.*[\\\/]/, '');
+//				anim.renderer.animationItem.assets[1].u = mrSlug.profile_picture.substr(0,mrSlug.profile_picture.lastIndexOf('/')) + '/';	
+				
 				//testing is text change change the same way//
-						anim.renderer.elements[7].data.t.d.k[0].s.t = mrSlug.team.league.name; //LEAUGE NAME
-						anim.renderer.elements[11].data.t.d.k[0].s.t= mrSlug.team.league.name; //LEAUGE NAME	
+
+//						anim.renderer.elements[7].data.t.d.k[0].s.t = mrSlug.team.league.name; //LEAUGE NAME
+//						anim.renderer.elements[11].data.t.d.k[0].s.t= mrSlug.team.league.name; //LEAUGE NAME	
+//						anim.renderer.elements[7].baseElement.innerHTML = mrSlug.team.league.name;
+//						anim.renderer.elements[11].baseElement.innerHTML = mrSlug.team.league.name;
+//						anim.renderer.elements[7].baseElement.firstChild.textContent = mrSlug.team.league.name;
+//						anim.renderer.elements[11].baseElement.firstChild.textContent = mrSlug.team.league.name;
+				anim.renderer.elements[7].textContainer.innerHTML = mrSlug.team.league.name;
+				anim.renderer.elements[11].textContainer.innerHTML = mrSlug.team.league.name; //WOOOOORKS!
 				
+						
+				
+
 //				anim.destroy(); //MIGHT NEED TO MOVE
 			
 				anim.play(); //MIGHT NEED TO MOVE
