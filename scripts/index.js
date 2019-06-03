@@ -15,9 +15,32 @@ console.log(getQueryVariable("slug"));
 
 var mrSlug = 'startState';
 var data = "data is not global";
+var mrJson = "Fake API testing Data";
+var mrData = "data, am i data?";
 
+//////////FAKE TONSSER API REQUEST//////////////
 
+fetch('./scripts/API_Data.json')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (mrData) {
+                appendData(mrData);
+            })
+            .catch(function (err) {
+                console.log('error: ' + err);
+            });
+	
+	globalThis.mrData;
+	
+	function appendData(mrData) {
+	console.log(mrData);
+	}
+//////////FAKE TONSSER API REQUEST//////////////
+
+/*
 //////////TONSSER API REQUEST//////////////
+
 var request = new XMLHttpRequest()
 request.open('GET', 'https://staging-api.tonsser.com/50/users/' + getQueryVariable("slug"), true) // getting the user slug from the metaData
 
@@ -41,6 +64,7 @@ request.onload = function(){
 request.send()
 //////////TONSSER API REQUEST//////////////
 
+*/
 
 setTimeout(myWaiter, 800);
 
