@@ -1,0 +1,263 @@
+// JSON Document{
+response: {
+	slug: "henrik-holm",
+	firstname: "Henrik",
+	lastname: "Holm",
+	facebook_id: null,
+	role_id: 1,
+	primary_position_id: 5,
+	country_id: 59,
+	gender: "male",
+	email: null,
+	profile_picture: "http://tonsser-production.imgix.net/henrik-holm/profile-picture/57ECB8F6-0596-4FF2-876F-C7219765FBA6.jpeg",
+	google_id: null,
+	digits_id: null,
+	phone_number: null,
+	top_player: false,
+	created_at: "2015-03-18T22:22:07+01:00",
+	account_kit_id: null,
+	is_coach: false,
+	coach_team_slugs: [],
+	role: "player",
+	is_verified: false,
+	anonymous: false,
+	followers_count: 355,
+	followings_count: 56,
+	views_count: null,
+	last_active_at: "2019-05-24T13:46:18+02:00",
+	is_following: false,
+	primary_position: {
+		id: 5,
+		abbreviation: "lwb",
+		name: "left wing-back",
+		order: 5,
+		group: 4,
+		coordinates: {
+			x: 0.12,
+			y: 0.65
+		},
+		position_group_id: 4,
+		localized_name: "Left Wing Back",
+		localized_abbreviation: "LWB"
+	},
+	club: {
+		slug: "boldklubben-volvox",
+		name: "Boldklubben Volvox",
+		logo_url: "http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png"
+	},
+	team: {
+		id: 1942992,
+		club_name: "Boldklubben Volvox",
+		crowd_sourced: false,
+		crowdsourced: false,
+		display_name: "Boldklubben Volvox",
+		is_crowdsourced: false,
+		league_name: "Serie 4, P12 18/19",
+		league_slug: "serie-4-p12-18-19",
+		name: "Volvox",
+		require_permission_to_join: false,
+		season: {
+			start: "2018-08-17",
+			end: "2019-06-14"
+		},
+		slug: "volvox-serie-4-p12-18-19-119103",
+		players_count: 5,
+		number_of_coaches: 0,
+		current_user_on_team: false,
+		is_active: true,
+		is_primary: null,
+		prompt_for_match_creation: false,
+		league: {
+			name: "Serie 4, P12 18/19",
+			slug: "serie-4-p12-18-19",
+			id: 119103
+		},
+		club: {
+			slug: "boldklubben-volvox",
+			name: "Boldklubben Volvox",
+			logo_url: "http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png"
+		}
+	},
+	profile: {
+		dob: "1989-07-27",
+		shirt_number: 7,
+		primary_foot: "nil",
+		height: 180,
+		weight: "77.0",
+		agent: false,
+		contract: false,
+		empty: false,
+		free_text: null,
+		fandom: {
+			club: {
+				name: "Real Madrid",
+				id: 325,
+				country: {
+					id: 205,
+					name: "Spain",
+					code: "ES",
+					off_season_start_date: null,
+					off_season_end_date: null,
+					updated_at: "2018-07-13T16:26:15+02:00",
+					created_at: "2018-07-13T16:26:15+02:00"
+				}
+			},
+			brand: {
+				name: "Adidas",
+				id: 2
+			}
+		},
+		boot: {
+			id: 220,
+			name: "adidas Predator",
+			image_url: null
+		},
+		primary_position: {
+			id: 5,
+			abbreviation: "lwb",
+			name: "left wing-back",
+			order: 5,
+			group: 4,
+			coordinates: {
+				x: 0.12,
+				y: 0.65
+			},
+			position_group_id: 4,
+			localized_name: "Left Wing Back",
+			localized_abbreviation: "LWB"
+		},
+		secondary_position: {
+			id: 12,
+			abbreviation: "lw",
+			name: "left wing",
+			order: 12,
+			group: 2,
+			coordinates: {
+				x: 0.12,
+				y: 0.26
+			},
+			position_group_id: 2,
+			localized_name: "Left Wing",
+			localized_abbreviation: "LW"
+		},
+		tertiary_position: {
+			id: 9,
+			abbreviation: "lm",
+			name: "left midfield",
+			order: 9,
+			group: 3,
+			coordinates: {
+				x: 0.12,
+				y: 0.5
+			},
+			position_group_id: 3,
+			localized_name: "Left Midfield",
+			localized_abbreviation: "LM"
+		}
+	},
+	shield: {
+		type: "image",
+		stats: [{
+			text: "Matches",
+			value: 4,
+			percent: 0.308
+		}, {
+			text: "Votes",
+			value: 0,
+			percent: 0
+		}, {
+			text: "Clean sheets",
+			value: 0,
+			percent: 0
+		}],
+		rating: {
+			overall: 6.2,
+			components: {
+				match: 0.23,
+				votes: 0,
+				achievements: 0
+			}
+		},
+		title_text: "Henrik Holm",
+		subtitle_text: "Boldklubben Volvox",
+		description_text: null,
+		tracking_name: "Liverpool",
+		team: {
+			id: 1942992,
+			club_name: "Boldklubben Volvox",
+			crowd_sourced: false,
+			crowdsourced: false,
+			display_name: "Boldklubben Volvox",
+			is_crowdsourced: false,
+			league_name: "Serie 4, P12 18/19",
+			league_slug: "serie-4-p12-18-19",
+			name: "Volvox",
+			require_permission_to_join: false,
+			season: {
+				start: "2018-08-17",
+				end: "2019-06-14"
+			},
+			slug: "volvox-serie-4-p12-18-19-119103",
+			players_count: 5,
+			number_of_coaches: 0,
+			league: {
+				name: "Serie 4, P12 18/19",
+				slug: "serie-4-p12-18-19",
+				id: 119103
+			},
+			club: {
+				slug: "boldklubben-volvox",
+				name: "Boldklubben Volvox",
+				logo_url: "http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png"
+			}
+		},
+		user: {
+			slug: "henrik-holm",
+			firstname: "Henrik",
+			lastname: "Holm",
+			facebook_id: null,
+			role_id: 1,
+			primary_position_id: 5,
+			country_id: 59,
+			gender: "male",
+			email: null,
+			profile_picture: "http://tonsser-production.imgix.net/henrik-holm/profile-picture/57ECB8F6-0596-4FF2-876F-C7219765FBA6.jpeg",
+			google_id: null,
+			digits_id: null,
+			phone_number: null,
+			top_player: false,
+			created_at: "2015-03-18T21:22:07Z",
+			account_kit_id: null,
+			is_coach: false,
+			coach_team_slugs: [],
+			role: "player",
+			is_verified: false,
+			anonymous: false,
+			primary_position: {
+				id: 5,
+				abbreviation: "lwb",
+				name: "left wing-back",
+				order: 5,
+				group: 4,
+				coordinates: {
+					x: 0.12,
+					y: 0.65
+				},
+				position_group_id: 4,
+				localized_name: "Left Wing Back",
+				localized_abbreviation: "LWB"
+			},
+			club: {
+				slug: "boldklubben-volvox",
+				name: "Boldklubben Volvox",
+				logo_url: "http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png"
+			}
+		},
+		explanation: {
+			title_text: null,
+			description: null
+		},
+		image_url: "http://tonsser-production.imgix.net/shields/abe716767b279763300d1556561894"
+	}
+}
+}
