@@ -123,7 +123,7 @@ function myWaiter() {
 						anim.renderer.elements[11].textContainer.innerHTML = mrSlug.team.league.name; //WOOOOORKS!
 
 								*/
-
+						lottie.setQuality('low');
 						anim.play(); //MIGHT NEED TO MOVE
 				  })
 
