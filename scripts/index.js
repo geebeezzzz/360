@@ -65,39 +65,10 @@ function myWaiter() {
 	globalThis.data;
 	
 	function appendData(data) {
-			data.assets[3].layers[1].t.d.k[0].s.t = mrSlug.shield.title_text; //Player Name
-			//var toReplace = data.assets[3].layers[1].t.d.k[0].s.t;
-			//var replaceMe = toReplace.replace(mrSlug.shield.title_text);
-			
-			console.log(data.assets[3].layers[1].t.d.k[0].s.t);
+		//	data.assets[3].layers[1].t.d.k[0].s.t = mrSlug.shield.title_text; //Player Name			
+		//	console.log(data.assets[3].layers[1].t.d.k[0].s.t);
 			import ('https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie.js');
-//            var mainContainer = document.getElementById("myData");
-//			myObj = data;
-//			console.log(myObj);
-//			imgURL = mrSlug.profile_picture;
-//			console.log(imgURL.substr(0,imgURL.lastIndexOf('/')) + '/');
-//			console.log(imgURL.replace(/^.*[\\\/]/, ''));
-//			myObj.assets[0].u = imgURL.substr(0,imgURL.lastIndexOf('/')) + '/';
-//			myObj.assets[0].p = imgURL.replace(/^.*[\\\/]/, '');
-//			
-//			//////////////TEXT////////////////////////////////////////
-//			myObj.assets[3].layers[1].t.d.k[0].s.t = mrSlug.shield.title_text //Player Name
-//			myObj.assets[3].layers[0].t.d.k[0].s.t = mrSlug.shield.subtitle_text //Club Name
-//			myObj.layers[7].t.d.k[0].s.t = mrSlug.team.league.name //League Name
-//			myObj.layers[11].t.d.k[0].s.t = mrSlug.team.league.name //League Name
-		
-//					anim.renderer.elements[2].elements[2].assetData.p = imgURL.replace(/^.*[\\\/]/, '');
-//					anim.renderer.elements[2].elements[2].assetData.u = imgURL.substr(0,imgURL.lastIndexOf('/')) + '/';	
-									
-//					console.log(mrSlug);
-//					console.log(anim.renderer);
-//					console.log(anim.renderer.layers);
-//					console.log(anim.renderer.layers[2].layers[1]);
 
-				
-//					console.log(anim.renderer.elements[2].elements[2].assetData.p);
-		
-		
 		
 		
 		setTimeout(myLottieWaiter, 3000);
@@ -106,119 +77,56 @@ function myWaiter() {
 		
 		
 		const imageChange = document.getElementById("Profile");
-		//imageChange.firstChild.href.baseVal = imageInfo;
-		//imageChange[0].firstChild.href.baseVal = circles[i].thumbnail;
 		console.log(imageChange);
-		
-//function dynamicallyLoadScript(url) {	
-//	var lottie = document.createElement("lottie");  // create a script DOM node
-//	lottie.src = 'https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie.js'  // set its src to the provided URL
-//	document.body.appendChild(script); 
-//}
+
 		
 	
 		
 		
-	function myLottieWaiter(){
-		
-		console.log(data);
-		
-	
-		
-			
-		var animData = {
-				  container: document.getElementById('POTW'),
-				  renderer: 'svg',
-				  loop: true,
-				  autoplay: false,
-				  path: 'data.json',
-				  assetsPath: './images/',
-				  rendererSettings: {
-					  clearCanvas: true,
-					//  progressiveLoad: true,
-				  }
+		function myLottieWaiter(){
+
+				console.log(data);
+
+
+
+
+				var animData = {
+						  container: document.getElementById('POTW'),
+						  renderer: 'html',
+						  loop: true,
+						  autoplay: false,
+						  path: 'data.json',
+						  assetsPath: './images/',
 				};
-			
 
 
-			var anim = lottie.loadAnimation(animData);
 
-			anim.addEventListener("DOMLoaded", function() {
-				console.log(anim.renderer);
-//				anim.renderer.elements[7].updateDocumentData({t:mrSlug.team.league.name}); //LEAUGE NAME
-//				anim.renderer.elements[11].updateDocumentData({t:mrSlug.team.league.name}); //LEAUGE NAME
-				anim.renderer.elements[2].elements[2].updateDocumentData({t:mrSlug.shield.title_text}); //Player Name
-				anim.renderer.elements[2].elements[1].updateDocumentData({t:mrSlug.shield.subtitle_text}); //Club Name
-				anim.renderer.elements[2].elements[0].updateDocumentData({t:mrSlug.shield.user.primary_position.localized_abbreviation}); //Player Position
-				
-				anim.renderer.elements[4].elements[2].updateDocumentData({t:mrSlug.shield.title_text}); //Player Name
-				anim.renderer.elements[4].elements[1].updateDocumentData({t:mrSlug.shield.subtitle_text}); //Club Name
-				anim.renderer.elements[4].elements[0].updateDocumentData({t:mrSlug.shield.user.primary_position.localized_abbreviation}); //Player Position
-				
-				
-				//IMAGES
-				
+					var anim = lottie.loadAnimation(animData);
 
-//				anim.renderer.elements[2].elements[7].innerElem.href.animVal = mrSlug.profile_picture;
-				anim.renderer.elements[2].elements[7].innerElem.href.baseVal = mrSlug.profile_picture.replace("http://","https://");				
-//				anim.renderer.elements[4].elements[7].innerElem.href.animVal = mrSlug.profile_picture;
-				anim.renderer.elements[4].elements[7].innerElem.href.baseVal = mrSlug.profile_picture.replace("http://","https://");
-				anim.renderer.elements[2].elements[3].innerElem.href.baseVal = mrSlug.club.logo_url.replace("http://","https://");
-				anim.renderer.elements[4].elements[3].innerElem.href.baseVal = mrSlug.club.logo_urlreplace("http://","https://");
-			
-				
-//				anim.renderer.elements[2].elements[7].assetData.p = mrSlug.profile_picture.replace(/^.*[\\\/]/, '');
-//				anim.renderer.elements[2].elements[7].assetData.u = mrSlug.profile_picture.substr(0,mrSlug.profile_picture.lastIndexOf('/')) + '/';	
-//				anim.renderer.globalData.imageLoader.images[0].p = mrSlug.profile_picture.replace(/^.*[\\\/]/, '');
-//				anim.renderer.globalData.imageLoader.images[0].u = mrSlug.profile_picture.substr(0,mrSlug.profile_picture.lastIndexOf('/')) + '/';
-//				anim.renderer.globalData.imageLoader.images[1].p = mrSlug.profile_picture.replace(/^.*[\\\/]/, '');
-//				anim.renderer.globalData.imageLoader.images[1].u = mrSlug.profile_picture.substr(0,mrSlug.profile_picture.lastIndexOf('/')) + '/';
-//				anim.renderer.animationItem.assets[0].p = mrSlug.profile_picture.replace(/^.*[\\\/]/, '');
-//				anim.renderer.animationItem.assets[0].u = mrSlug.profile_picture.substr(0,mrSlug.profile_picture.lastIndexOf('/')) + '/';	
-//				anim.renderer.animationItem.assets[1].p = mrSlug.profile_picture.replace(/^.*[\\\/]/, '');
-//				anim.renderer.animationItem.assets[1].u = mrSlug.profile_picture.substr(0,mrSlug.profile_picture.lastIndexOf('/')) + '/';	
-				
-				//testing is text change change the same way//
+					anim.addEventListener("DOMLoaded", function() {
+			/*			console.log(anim.renderer);
+						anim.renderer.elements[2].elements[2].updateDocumentData({t:mrSlug.shield.title_text}); //Player Name
+						anim.renderer.elements[2].elements[1].updateDocumentData({t:mrSlug.shield.subtitle_text}); //Club Name
+						anim.renderer.elements[2].elements[0].updateDocumentData({t:mrSlug.shield.user.primary_position.localized_abbreviation}); //Player Position
 
-//						anim.renderer.elements[7].data.t.d.k[0].s.t = mrSlug.team.league.name; //LEAUGE NAME
-//						anim.renderer.elements[11].data.t.d.k[0].s.t= mrSlug.team.league.name; //LEAUGE NAME	
-//						anim.renderer.elements[7].baseElement.innerHTML = mrSlug.team.league.name;
-//						anim.renderer.elements[11].baseElement.innerHTML = mrSlug.team.league.name;
-//						anim.renderer.elements[7].baseElement.firstChild.textContent = mrSlug.team.league.name;
-//						anim.renderer.elements[11].baseElement.firstChild.textContent = mrSlug.team.league.name;
-				anim.renderer.elements[7].textContainer.innerHTML = mrSlug.team.league.name;
-				anim.renderer.elements[11].textContainer.innerHTML = mrSlug.team.league.name; //WOOOOORKS!
-				
-						
-				
+						anim.renderer.elements[4].elements[2].updateDocumentData({t:mrSlug.shield.title_text}); //Player Name
+						anim.renderer.elements[4].elements[1].updateDocumentData({t:mrSlug.shield.subtitle_text}); //Club Name
+						anim.renderer.elements[4].elements[0].updateDocumentData({t:mrSlug.shield.user.primary_position.localized_abbreviation}); //Player Position
 
-//				anim.destroy(); //MIGHT NEED TO MOVE
-			
-				anim.play(); //MIGHT NEED TO MOVE
-			})
-				
-//			anim.addEventListener("destroy", function(){
-//				
-//				console.log("im destroyed");
-//				
-//						var animData = {
-//						  container: document.getElementById('POTW'),
-//						  renderer: 'html',
-//						  loop: true,
-//						  autoplay: false,
-//						  path: 'data.json',
-//						  assetsPath: './images/',
-//						  rendererSettings: {
-//						  clearCanvas: true,
-//						  progressiveLoad: true,
-//						  }
-//						};
-//					var anim = lottie.loadAnimation(animData);
-//					anim.play(); //MIGHT NEED TO MOVE
-//				})
-				
-				
-				
+						//IMAGES
+						anim.renderer.elements[2].elements[7].innerElem.href.baseVal = mrSlug.profile_picture.replace("http://","https://");				
+						anim.renderer.elements[4].elements[7].innerElem.href.baseVal = mrSlug.profile_picture.replace("http://","https://");
+						anim.renderer.elements[2].elements[3].innerElem.href.baseVal = mrSlug.club.logo_url.replace("http://","https://");
+						anim.renderer.elements[4].elements[3].innerElem.href.baseVal = mrSlug.club.logo_url.replace("http://","https://");
+
+						anim.renderer.elements[7].textContainer.innerHTML = mrSlug.team.league.name;
+						anim.renderer.elements[11].textContainer.innerHTML = mrSlug.team.league.name; //WOOOOORKS!
+
+								*/
+
+						anim.play(); //MIGHT NEED TO MOVE
+				  })
+
 			}
 		}
 					
