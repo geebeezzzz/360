@@ -1,11 +1,4 @@
-// JavaScript Document
-
-const app = document.getElementById('root')
-
-///////////////////////////////////////////////////////////////////GET URL INFO OUT/////////////////////////////////////////////	
-
-
-
+////////////GET SLUG////////////////
 function getQueryVariable(variable)
 {
        var query = window.location.search.substring(1);
@@ -18,62 +11,66 @@ function getQueryVariable(variable)
 }
 
 console.log(getQueryVariable("slug"));
+////////////GET SLUG////////////////
 
+var mrSlug = 'startState';
+var data = "data is not global";
+var mrJson = "Fake API testing Data";
+var mrData = "data, am i data?";
 
-//                https://youthful-feynman-7811c2.netlify.com/?slug=david-pedersen
+//////////FAKE TONSSER API REQUEST//////////////
 
-/////////////////////////////////////////////////////////////////GET URL INFO OUT/////////////////////////////////////////////	
+fetch('./scripts/API_Data.json')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (mrData) {
+                appendData(mrData);
+            })
+            .catch(function (err) {
+                console.log('error: ' + err);
+            });
+	
+	globalThis.mrData;
+	
+	function appendData(mrData) {
+	console.log(mrData);
+	}
+//////////FAKE TONSSER API REQUEST//////////////
 
-
-
-// Create a request variable and assign a new XMLHttpRequest object to it.
-var mrSlug = 'startState'
+/*
+//////////TONSSER API REQUEST//////////////
 
 var request = new XMLHttpRequest()
-
-// Open a new connection, using the GET request on the URL endpoint
 request.open('GET', 'https://staging-api.tonsser.com/50/users/' + getQueryVariable("slug"), true) // getting the user slug from the metaData
-// request.open('GET', 'https://staging-api.tonsser.com/50/users/david-pedersen', true) // original api call
 
-request.onload = function () {
-	
+
+request.onload = function(){
 	var data = JSON.parse(this.response)
-	
 	{
-	mrSlug = data.response;
+		mrSlug = data.response;
 	}
 	
+	if (request.status >= 200 && request.status < 400) {
+		console.log(data.response.firstname);  
+  	}
+	else {
+    	const errorMessage = document.createElement('marquee')
+    	errorMessage.textContent = `Gah, it's not working!`
+    	app.appendChild(errorMessage)
+  	}
 	console.log(mrSlug);
-	
-  if (request.status >= 200 && request.status < 400) {
-/////////////////////////////////////////////////////////////////PLACE TO RUN USING API DATA/////////////////////////////////////////////	  
-	
-	  
-	  console.log(data.response.firstname);
-	  
-/////////////////////////////////////////////////////////////////PLACE TO RUN USING API DATA/////////////////////////////////////////////	 	  
-	  
-	  
-    
-  } else {
-    const errorMessage = document.createElement('marquee')
-    errorMessage.textContent = `Gah, it's not working!`
-    app.appendChild(errorMessage)
-  }
-	
-	
-	
-  }
-
-// Send request
+}
 request.send()
-//
-//
-//
+//////////TONSSER API REQUEST//////////////
+
+*/
+
 setTimeout(myWaiter, 800);
 
-//
-//
+
+
+/////////////////////GET LOTTIE DATA.JSON////////////////////
 function myWaiter() {
 	fetch('data.json')
             .then(function (response) {
@@ -85,82 +82,76 @@ function myWaiter() {
             .catch(function (err) {
                 console.log('error: ' + err);
             });
-
+	
+	globalThis.data;
 	
 	function appendData(data) {
-			
-            var mainContainer = document.getElementById("myData");
-//			
-//			//////////////////////////////////CHANGING////////////////////////
-			myObj = data;
-			console.log(myObj);
-			
-			///////////////////IMAGE//////////////////
-			
-			imgURL = mrSlug.profile_picture;
-			console.log(imgURL.substr(0,imgURL.lastIndexOf('/')) + '/');
-			console.log(imgURL.replace(/^.*[\\\/]/, ''));
-			
-			myObj.assets[0].u = imgURL.substr(0,imgURL.lastIndexOf('/')) + '/';
-			myObj.assets[0].p = imgURL.replace(/^.*[\\\/]/, '');
-			
-			//////////////TEXT////////////////////////////////////////
-			myObj.assets[3].layers[1].t.d.k[0].s.t = mrSlug.shield.title_text //Player Name
-			myObj.assets[3].layers[0].t.d.k[0].s.t = mrSlug.shield.subtitle_text //Club Name
-			myObj.layers[7].t.d.k[0].s.t = mrSlug.team.league.name //League Name
-			myObj.layers[11].t.d.k[0].s.t = mrSlug.team.league.name //League Name
-			
-			setTimeout(myLottieWaiter, 3000);
+		//	data.assets[3].layers[1].t.d.k[0].s.t = mrSlug.shield.title_text; //Player Name			
+		//	console.log(data.assets[3].layers[1].t.d.k[0].s.t);
+			import ('https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.1/lottie_html.js');
+
+		
+		
+		setTimeout(myLottieWaiter, 3000);
+		
+		
+		
+		
+		const imageChange = document.getElementById("Profile");
+		console.log(imageChange);
+
+		
 	
-			
-			var animData = {
-				  container: document.getElementById('POTW'),
-				  renderer: 'svg',
-				  loop: true,
-				  autoplay: false,
-				  path: 'data.json',
+		
+		
+		function myLottieWaiter(){
+
+				console.log(data);
+
+
+
+
+				var animData = {
+						  container: document.getElementById('POTW'),
+						  renderer: 'html',
+						  loop: true,
+						  autoplay: false,
+						  path: 'data.json',
+						  assetsPath: './images/',
 				};
-		
-			var anim = lottie.loadAnimation(animData);
-		
-			anim.addEventListener("DOMLoaded", function() {
-					newText = layers[4].layers[1];
-					console.log(anim.renderer);
-					console.log(anim.renderer.layers);
-					console.log(anim.renderer.layers[2].layers[1]);
-					anim.renderer.elements[7].updateDocumentData({t:'new text'}); //LEAUGE NAME
-					anim.renderer.elements[11].updateDocumentData({t:'new text'}); //LEAUGE NAME
-					anim.renderer.newText.updateDocumentData({t:'mrSlug.shield.title_text'}); //Player Name
-//					anim.renderer.layers[4].layers[1].updateDocumentData({t:mrSlug.shield.title_text}); //Player Name
-//					anim.renderer.layers[2].layers[0].updateDocumentData({t:mrSlug.shield.subtitle_text}); //Club Name
-//					anim.renderer.layers[4].layers[0].updateDocumentData({t:mrSlug.shield.subtitle_text}); //Club Name
-					anim.play();
-				})
-		
-			function myLottieWaiter(){
-				/////////////////////ADD LISTENER//////////////////////////////////////////////			
 
-//					anim.renderer.newText.updateDocumentData({t:'new text'});
-				
+
+
+					var anim = lottie.loadAnimation(animData);
+
+					anim.addEventListener("DOMLoaded", function() {
+						console.log(anim.renderer);
+					/*			anim.renderer.elements[2].elements[2].updateDocumentData({t:mrSlug.shield.title_text}); //Player Name
+						anim.renderer.elements[2].elements[1].updateDocumentData({t:mrSlug.shield.subtitle_text}); //Club Name
+						anim.renderer.elements[2].elements[0].updateDocumentData({t:mrSlug.shield.user.primary_position.localized_abbreviation}); //Player Position
+
+						anim.renderer.elements[4].elements[2].updateDocumentData({t:mrSlug.shield.title_text}); //Player Name
+						anim.renderer.elements[4].elements[1].updateDocumentData({t:mrSlug.shield.subtitle_text}); //Club Name
+						anim.renderer.elements[4].elements[0].updateDocumentData({t:mrSlug.shield.user.primary_position.localized_abbreviation}); //Player Position
+
+						//IMAGES
+						anim.renderer.elements[2].elements[7].innerElem.href.baseVal = mrSlug.profile_picture.replace("http://","https://");				
+						anim.renderer.elements[4].elements[7].innerElem.href.baseVal = mrSlug.profile_picture.replace("http://","https://");
+						anim.renderer.elements[2].elements[3].innerElem.href.baseVal = mrSlug.club.logo_url.replace("http://","https://");
+						anim.renderer.elements[4].elements[3].innerElem.href.baseVal = mrSlug.club.logo_url.replace("http://","https://");
+
+						anim.renderer.elements[7].textContainer.innerHTML = mrSlug.team.league.name;
+						anim.renderer.elements[11].textContainer.innerHTML = mrSlug.team.league.name; //WOOOOORKS!
+
+								*/
+						lottie.setQuality(1);
+						anim.play(); //MIGHT NEED TO MOVE
+				  })
+
 			}
-								  
-				
-		
-							
-
-//				var animation = bodymovin.loadAnimation({
-//				  container: document.getElementById('POTW'),
-//				  renderer: 'svg',
-//				  loop: true,
-//				  autoplay: true,
-//				  path: 'data.json',
-//				})
-//			}
-			//animation.renderer.elements[0].updateDocumentData({t:'aaaaaaaah change'});
-			//animation.renderer.assets.layers[1].t.d.k[0].s.updateDocumentData({t:'aaaaaaaah change'});
-
-
 		}
-}
+					
+	}
+
 
 

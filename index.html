@@ -12,7 +12,9 @@
 <body>
 	
 	<div id="what">
-	  <p>what am i?</p>
+	  	<input type="text" id="myText" value="henrik-holm">	
+		<button onclick="mySlugger()" id="Btn01">add slug yo</button>
+	  	
 	</div>
 	
 	 <div id="myData"></div>
@@ -20,12 +22,19 @@
 	 <div id="root"></div>
 	
 	 <div id="POTW"></div>
-	<script src="data.json"></script>
+<!--	<script src="data.json"></script>-->
 	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie.js" type="text/javascript"></script>
+<!--	<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie.js" type="text/javascript"></script>-->
 <!--	<script src="js/lottie.js" type="text/javascript"></script>	-->
 <!--	<script src="scripts/bodymovin.json"></script>				-->
 	<script src="scripts/index.js"></script>
+	<script>
+		function mySlugger() {
+			var x = "?slug=" + document.getElementById("myText").value;
+  			location.search = (x);
+			
+		}
+	</script>
 	
 	
 	
