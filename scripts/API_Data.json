@@ -1,0 +1,176 @@
+{	
+	"player01": {
+		"slug": "henrik-holm",
+		"player_name":"Henrik Holm",
+		"profile_picture": "http://tonsser-production.imgix.net/henrik-holm/profile-picture/57ECB8F6-0596-4FF2-876F-C7219765FBA6.jpeg",
+		"club_name": "Boldklubben Volvox",
+		"club_logo_url": "http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"localized_abbreviation": "LWB",
+		"overall_rating": 7.0,
+		"home_club_result": 3,
+		"home_club_logo":	"http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"away_club_result": 2,
+		"away_club_logo": "http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"shield_image_url": "http://tonsser-production.imgix.net/shields/abe716767b279763300d1556561894",
+		"country_id": 59
+	},	
+	
+	"player02": {
+		"slug": "henrik-holm",
+		"player_name":"Henrik Holm",
+		"profile_picture": "http://tonsser-production.imgix.net/henrik-holm/profile-picture/57ECB8F6-0596-4FF2-876F-C7219765FBA6.jpeg",
+		"club_name": "Boldklubben Volvox",
+		"club_logo_url": "http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"localized_abbreviation": "LWB",
+		"overall_rating": 8.1,
+		"home_club_result": 3,
+		"home_club_logo":	"http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"away_club_result": 2,
+		"away_club_logo": "http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"shield_image_url": "http://tonsser-production.imgix.net/shields/abe716767b279763300d1556561894",
+		"country_id": 59	
+	},	
+	
+	"player03": {
+		"slug": "henrik-holm",
+		"player_name":"Henrik Holm",
+		"profile_picture": "http://tonsser-production.imgix.net/henrik-holm/profile-picture/57ECB8F6-0596-4FF2-876F-C7219765FBA6.jpeg",
+		"club_name": "Boldklubben Volvox",
+		"club_logo_url": "http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"localized_abbreviation": "LWB",
+		"overall_rating": 9.1,
+		"home_club_result": 3,
+		"home_club_logo":	"http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"away_club_result": 2,
+		"away_club_logo": "http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"shield_image_url": "http://tonsser-production.imgix.net/shields/abe716767b279763300d1556561894",
+		"country_id": 59	
+	},	
+	
+	"player04": {
+		"slug": "henrik-holm",
+		"player_name":"Henrik Holm",
+		"profile_picture": "http://tonsser-production.imgix.net/henrik-holm/profile-picture/57ECB8F6-0596-4FF2-876F-C7219765FBA6.jpeg",
+		"club_name": "Boldklubben Volvox",
+		"club_logo_url": "http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"localized_abbreviation": "LWB",
+		"overall_rating": 4.1,
+		"home_club_result": 3,
+		"home_club_logo":	"http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"away_club_result": 2,
+		"away_club_logo": "http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"shield_image_url": "http://tonsser-production.imgix.net/shields/abe716767b279763300d1556561894",
+		"country_id": 59	
+	},	
+	
+	"player05": {
+		"slug": "henrik-holm",
+		"player_name":"Henrik Holm",
+		"profile_picture": "http://tonsser-production.imgix.net/henrik-holm/profile-picture/57ECB8F6-0596-4FF2-876F-C7219765FBA6.jpeg",
+		"club_name": "Boldklubben Volvox",
+		"club_logo_url": "http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"localized_abbreviation": "LWB",
+		"overall_rating": 7.1,
+		"home_club_result": 3,
+		"home_club_logo":	"http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"away_club_result": 2,
+		"away_club_logo": "http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"shield_image_url": "http://tonsser-production.imgix.net/shields/abe716767b279763300d1556561894"	
+	},	
+	
+	"player06": {
+		"slug": "henrik-holm",
+		"player_name":"Henrik Holm",
+		"profile_picture": "http://tonsser-production.imgix.net/henrik-holm/profile-picture/57ECB8F6-0596-4FF2-876F-C7219765FBA6.jpeg",
+		"club_name": "Boldklubben Volvox",
+		"club_logo_url": "http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"localized_abbreviation": "LWB",
+		"overall_rating": 3.1,
+		"home_club_result": 3,
+		"home_club_logo":	"http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"away_club_result": 2,
+		"away_club_logo": "http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"shield_image_url": "http://tonsser-production.imgix.net/shields/abe716767b279763300d1556561894",
+		"country_id": 59	
+	},	
+	
+	"player07": {
+		"slug": "henrik-holm",
+		"player_name":"Henrik Holm",
+		"profile_picture": "http://tonsser-production.imgix.net/henrik-holm/profile-picture/57ECB8F6-0596-4FF2-876F-C7219765FBA6.jpeg",
+		"club_name": "Boldklubben Volvox",
+		"club_logo_url": "http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"localized_abbreviation": "LWB",
+		"overall_rating": 7.1,
+		"home_club_result": 3,
+		"home_club_logo":	"http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"away_club_result": 2,
+		"away_club_logo": "http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"shield_image_url": "http://tonsser-production.imgix.net/shields/abe716767b279763300d1556561894",
+		"country_id": 59	
+	},	
+	
+	"player08": {
+		"slug": "henrik-holm",
+		"player_name":"Henrik Holm",
+		"profile_picture": "http://tonsser-production.imgix.net/henrik-holm/profile-picture/57ECB8F6-0596-4FF2-876F-C7219765FBA6.jpeg",
+		"club_name": "Boldklubben Volvox",
+		"club_logo_url": "http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"localized_abbreviation": "LWB",
+		"overall_rating": 5.1,
+		"home_club_result": 3,
+		"home_club_logo":	"http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"away_club_result": 2,
+		"away_club_logo": "http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"shield_image_url": "http://tonsser-production.imgix.net/shields/abe716767b279763300d1556561894",
+		"country_id": 59	
+	},	
+	
+	"player09": {
+		"slug": "henrik-holm",
+		"player_name":"Henrik Holm",
+		"profile_picture": "http://tonsser-production.imgix.net/henrik-holm/profile-picture/57ECB8F6-0596-4FF2-876F-C7219765FBA6.jpeg",
+		"club_name": "Boldklubben Volvox",
+		"club_logo_url": "http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"localized_abbreviation": "LWB",
+		"overall_rating": 7.1,
+		"home_club_result": 3,
+		"home_club_logo":	"http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"away_club_result": 2,
+		"away_club_logo": "http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"shield_image_url": "http://tonsser-production.imgix.net/shields/abe716767b279763300d1556561894",
+		"country_id": 59	
+	},	
+	
+	"player10": {
+		"slug": "henrik-holm",
+		"player_name":"Henrik Holm",
+		"profile_picture": "http://tonsser-production.imgix.net/henrik-holm/profile-picture/57ECB8F6-0596-4FF2-876F-C7219765FBA6.jpeg",
+		"club_name": "Boldklubben Volvox",
+		"club_logo_url": "http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"localized_abbreviation": "LWB",
+		"overall_rating": 7.1,
+		"home_club_result": 3,
+		"home_club_logo":	"http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"away_club_result": 2,
+		"away_club_logo": "http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"shield_image_url": "http://tonsser-production.imgix.net/shields/abe716767b279763300d1556561894",
+		"country_id": 59	
+	},	
+	
+	"player11": {
+		"slug": "henrik-holm",
+		"player_name":"Henrik Holm",
+		"profile_picture": "http://tonsser-production.imgix.net/henrik-holm/profile-picture/57ECB8F6-0596-4FF2-876F-C7219765FBA6.jpeg",
+		"club_name": "Boldklubben Volvox",
+		"club_logo_url": "http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"localized_abbreviation": "LWB",
+		"overall_rating": 7.1,
+		"home_club_result": 3,
+		"home_club_logo":	"http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"away_club_result": 2,
+		"away_club_logo": "http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
+		"shield_image_url": "http://tonsser-production.imgix.net/shields/abe716767b279763300d1556561894",
+		"country_id": 59	
+	}
+}

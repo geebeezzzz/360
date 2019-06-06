@@ -18,6 +18,11 @@ body {
 	color: antiquewhite;
 }
 
+#Score2 {
+	font-family: roboto;
+	text-align: center;
+	color: green;
+}
 
 #POTW {
  			
@@ -29,3 +34,22 @@ body {
             text-align: center;
             opacity: 1;
 		}
+
+#LeagueName, #POTW_Text {
+	
+	/*color:green;
+	background-color: coral;
+	font-size: 100px;
+	border:20px solid Tomato;
+	content: 'whatever it is you want to add';*/
+	
+}
+
+#Profile, #Profile {
+/*
+	image: url('images/my-image.png');
+	border:20px solid Tomato;
+	background-color: lightblue;
+*/
+	
+}
