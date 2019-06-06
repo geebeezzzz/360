@@ -146,9 +146,8 @@ request.send()
 							console.log('https' + ratingSort[0].away_club_logo.slice(4));
 							
 							
-							// 2, 5, 7, 9, 10, 12, 14, 15, 18, 21, 23
-														// 2, 5, 7, 9, 10, 12, 14, 15, 18, 21, 23
-							console.log(ratingSort[10].away_club_result);
+//							2, 5, 7, 9, 10, 12, 14, 15, 18, 21, 23
+//							console.log(ratingSort[10].away_club_result);
 							anim.renderer.elements[2].elements[0].updateDocumentData({t:JSON.stringify(ratingSort[0].away_club_result)});			// 0 - #Score2
 							anim.renderer.elements[2].elements[1].updateDocumentData({t:JSON.stringify(ratingSort[0].home_club_result)}); 			// 1 - #Score1
 							anim.renderer.elements[2].elements[3].elements[1].innerElem.href.baseVal = 'https' + ratingSort[0].away_club_logo.slice(4);				// 3 - #ClubLogo 3 1 - PNG
@@ -356,54 +355,14 @@ request.send()
 							anim.renderer.elements[37].elements[4].elements[1].innerElem.href.baseVal =  'https' + mrData.player11.club_logo_url.slice(4); // #ClubLogo
 							anim.renderer.elements[37].elements[7].elements[1].innerElem.href.baseVal =  'https' + mrData.player11.profile_picture.slice(4); // Profile_Holder
 
-							
-							// 0 - #Score2
-							// 1 - #Score1
-							// 3 - #ClubLogo 3 1 - PNG
-							// 4 - #ClubLogo 2 1 - PNG
-							// 9 - #Rating
-							// 11 - #ClubName
-							// 12 - #Name
-							// 13 - #ClubLogo 1 - PNG
-							// 15 - #Position
-							// 17 - Profile_Holder 1 - PNG
 
-							
-							// PLAYER 01 - Rating //
-//							anim.renderer.elements[2].elements[0].textContainer.innerHTML = ratingSort[0].away_club_result;						// 0 - #Score2
-//							anim.renderer.elements[2].elements[1].textContainer.innerHTML = ratingSort[0].home_club_result;						// 1 - #Score1
-//							anim.renderer.elements[2].elements[3].elements[1].innerElem.href.baseVal = ratingSort[0].away_club_logo;				// 3 - #ClubLogo 3 1 - PNG
-//							anim.renderer.elements[2].elements[5].elements[1].innerElem.href.baseVal = ratingSort[0].home_club_logo;				// 5 - #ClubLogo 2 1 - PNG
-//							anim.renderer.elements[2].elements[9].textContainer.innerHTML = ratingSort[0].overall_rating;							// 9 - #Rating
-//							anim.renderer.elements[2].elements[11].textContainer.innerHTML = ratingSort[0].club_name;								// 11 - #ClubName
-//							anim.renderer.elements[2].elements[12].textContainer.innerHTML = ratingSort[0].player_name;							// 12 - #Name
-//							anim.renderer.elements[2].elements[13].elements[1].innerElem.href.baseVal = ratingSort[0].club_logo_url;				// 13 - #ClubLogo 1 - PNG
-//							anim.renderer.elements[2].elements[15].textContainer.innerHTML = ratingSort.localized_abbreviation;					// 15 - #Position
-//							anim.renderer.elements[2].elements[17].elements[1].innerElem.href.baseVal = ratingSort[0].profile_picture;				// 17 - Profile_Holder 1 - PNG
 
-							
-							
-							
-						/*	anim.renderer.elements[2].elements[2].updateDocumentData({t:mrSlug.shield.title_text}); //Player Name
-							anim.renderer.elements[2].elements[1].updateDocumentData({t:mrSlug.shield.subtitle_text}); //Club Name
-							anim.renderer.elements[2].elements[0].updateDocumentData({t:mrSlug.shield.user.primary_position.localized_abbreviation}); //Player Position
-
-							anim.renderer.elements[4].elements[2].updateDocumentData({t:mrSlug.shield.title_text}); //Player Name
-							anim.renderer.elements[4].elements[1].updateDocumentData({t:mrSlug.shield.subtitle_text}); //Club Name
-							anim.renderer.elements[4].elements[0].updateDocumentData({t:mrSlug.shield.user.primary_position.localized_abbreviation}); //Player Position
-
-							//IMAGES
-							anim.renderer.elements[2].elements[7].innerElem.href.baseVal = mrSlug.profile_picture.replace("http://","https://");				
-							anim.renderer.elements[4].elements[7].innerElem.href.baseVal = mrSlug.profile_picture.replace("http://","https://");
-							anim.renderer.elements[2].elements[3].innerElem.href.baseVal = mrSlug.club.logo_url.replace("http://","https://");
-							anim.renderer.elements[4].elements[3].innerElem.href.baseVal = mrSlug.club.logo_url.replace("http://","https://");
-
-							anim.renderer.elements[7].textContainer.innerHTML = mrSlug.team.league.name;
-							anim.renderer.elements[11].textContainer.innerHTML = mrSlug.team.league.name; //WOOOOORKS!
-
-									*/
+							lottie.setSpeed(1)
 							lottie.setQuality(1);
-							anim.play(); //MIGHT NEED TO MOVE
+							anim.addEventListener("loaded_images", function() {
+								console.log("now!")
+								anim.play(); //MIGHT NEED TO MOVE
+							})
 					  })
 
 				}
