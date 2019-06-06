@@ -2,7 +2,7 @@
 	"CurrentUser": {
 		"slug": "henrik-holm",
 		"country_id": 59,
-		"phone_language": "en"  //if possible
+		"phone_language": "en"  
 	},	
 	
 	"player01": {
@@ -12,11 +12,11 @@
 		"club_name": "Boldklubben Volvox",
 		"club_logo_url": "http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png",
 		"localized_abbreviation": "LWB",
-		"overall_rating": 7.0, //last match rating
-		"home_club_result": 3, //last match home club result
-		"home_club_logo":	"http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png", //last match home club logo
-		"away_club_result": 2, //last match away club result
-		"away_club_logo": "http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png", //last match away club logo
+		"overall_rating": 7.0, 
+		"home_club_result": 3, 
+		"home_club_logo":	"http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png", 
+		"away_club_result": 2, 
+		"away_club_logo": "http://tonsser-production.imgix.net/clubs/boldklubben-volvox/icon.png", 
 		"shield_image_url": "http://tonsser-production.imgix.net/shields/abe716767b279763300d1556561894",
 		"country_id": 59
 	},	
