@@ -357,7 +357,7 @@ request.send()
 
 
 
-							lottie.setSpeed(0)
+							lottie.setSpeed(0);
 							lottie.setQuality(1);
 							anim.addEventListener("loaded_images", function() {
 								console.log("now!")
