@@ -357,12 +357,12 @@ request.send()
 
 
 
-							lottie.setSpeed(0);
-							lottie.setQuality(1);
-							anim.addEventListener("loaded_images", function() {
-								console.log("now!")
+							lottie.setSpeed(1)
+							lottie.setQuality(0);
+//							anim.addEventListener("loaded_images", function() {
+								console.log("now!");
 								anim.play(); //MIGHT NEED TO MOVE
-							})
+//							})
 					  })
 
 				}
