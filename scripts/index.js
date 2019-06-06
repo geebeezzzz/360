@@ -127,7 +127,7 @@ request.send()
 							  path: 'data.json',
 							  assetsPath: './images/',
 							  rendererSettings: {
-//								progressiveLoad: true
+								progressiveLoad: false
 //								clearCanvas: true;
 		  					  }	
 								
