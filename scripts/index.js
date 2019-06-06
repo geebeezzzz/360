@@ -96,7 +96,7 @@ request.send()
 		function appendData(data) {
 			//	data.assets[3].layers[1].t.d.k[0].s.t = mrSlug.shield.title_text; //Player Name			
 			//	console.log(data.assets[3].layers[1].t.d.k[0].s.t);
-				import ('https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.1/lottie.js');
+				import ('https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie_html.js');
 
 
 
